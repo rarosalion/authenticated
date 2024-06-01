@@ -1,1 +1,5 @@
 *.pyc
+.ruff_cache
+
+config/*
+!config/configuration.yaml
