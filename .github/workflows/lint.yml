@@ -15,17 +15,17 @@ jobs:
     name: "Ruff"
     runs-on: "ubuntu-latest"
     steps:
-        - name: "Checkout the repository"
+        - name: 📥 Checkout the repository
           uses: "actions/checkout@v4.1.0"
 
-        - name: "Set up Python"
+        - name: 🐍 Set up Python
           uses: actions/setup-python@v4.7.1
           with:
             python-version: "3.12"
             cache: "pip"
 
-        - name: "Install requirements"
+        - name: 🧾 Install requirements
           run: python3 -m pip install -r requirements.txt
 
-        - name: "Run"
+        - name: ▶️ Run
           run: python3 -m ruff check .
