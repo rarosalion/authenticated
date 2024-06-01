@@ -5,8 +5,8 @@
     "@ludeeus",
     "@rarosalion"
   ],
-  "documentation": "https://github.com/custom-components/authenticated",
+  "documentation": "https://github.com/rarosalion/authenticated",
   "iot_class": "local_polling",
-  "issue_tracker": "https://github.com/custom-components/authenticated/issues",
-  "version": "0.0.0"
+  "issue_tracker": "https://github.com/rarosalion/authenticated/issues",
+  "version": "0.0.1"
 }
