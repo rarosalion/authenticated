@@ -13,6 +13,13 @@ For general info about securing your instance:
 - https://www.home-assistant.io/docs/authentication/multi-factor-auth
 - https://www.home-assistant.io/docs/configuration/securing/
 
+# Changelog
+
+## v0.0.1
+
+* Initial fork of [custom-components/authenticated](https://github.com/custom-components/authenticated) by @ludeeus.
+* Updated development environment for 2024.5.5 including Python 3.12
+
 
 # Old Readme (may or may not be accurate)
 
