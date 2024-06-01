@@ -1,6 +1,5 @@
-"""
-A platform which allows you to get information
-about successful logins to Home Assistant.
+"""A platform to get successful login information from Home Assistant.
+
 For more details about this component, please refer to the documentation at
 https://github.com/custom-components/authenticated
 """
@@ -12,6 +11,7 @@ from ipaddress import ip_address as ValidateIP, ip_network
 import socket
 import voluptuous as vol
 import yaml
+from contextlib import suppress
 
 import homeassistant.helpers.config_validation as cv
 from homeassistant.components.sensor import PLATFORM_SCHEMA
@@ -63,10 +63,10 @@ def humanize_time(timestring):
 
 
 def setup_platform(hass, config, add_devices, discovery_info=None):
-    # Print startup message
+    """Print startup message."""
     _LOGGER.info(STARTUP)
 
-    """Create the sensor"""
+    """ Create the sensor. """
     notify = config.get(CONF_NOTIFY)
     exclude = config.get(CONF_EXCLUDE)
     exclude_clients = config.get(CONF_EXCLUDE_CLIENTS)
@@ -105,7 +105,8 @@ class AuthenticatedSensor(Entity):
     def initial_run(self):
         """Run this at startup to initialize the platform data."""
         users, tokens = load_authentications(
-            self.hass.config.path(".storage/auth"), self.exclude, self.exclude_clients
+            self.hass.config.path(
+                ".storage/auth"), self.exclude, self.exclude_clients
         )
 
         if os.path.isfile(self.out):
@@ -123,7 +124,8 @@ class AuthenticatedSensor(Entity):
             accessdata = AuthenticatedData(access, tokens[access])
 
             if accessdata.ipaddr in self.stored:
-                store = AuthenticatedData(accessdata.ipaddr, self.stored[access])
+                store = AuthenticatedData(
+                    accessdata.ipaddr, self.stored[access])
                 accessdata.ipaddr = access
 
                 if store.user_id is not None:
@@ -164,10 +166,11 @@ class AuthenticatedSensor(Entity):
         self.write_to_file()
 
     def update(self):
-        """Method to update sensor value"""
+        """Update sensor value."""
         updated = False
         users, tokens = load_authentications(
-            self.hass.config.path(".storage/auth"), self.exclude, self.exclude_clients
+            self.hass.config.path(
+                ".storage/auth"), self.exclude, self.exclude_clients
         )
         _LOGGER.debug("Users %s", users)
         _LOGGER.debug("Access %s", tokens)
@@ -190,14 +193,16 @@ class AuthenticatedSensor(Entity):
                         continue
                     elif new > stored:
                         updated = True
-                        _LOGGER.info("New successful login from known IP (%s)", access)
+                        _LOGGER.info(
+                            "New successful login from known IP (%s)", access)
                         ipaddress.prev_used_at = ipaddress.last_used_at
                         ipaddress.last_used_at = tokens[access]["last_used_at"]
                 except Exception:  # pylint: disable=broad-except
                     pass
             else:
                 updated = True
-                _LOGGER.warning("New successful login from unknown IP (%s)", access)
+                _LOGGER.warning(
+                    "New successful login from unknown IP (%s)", access)
                 accessdata = AuthenticatedData(access, tokens[access])
                 ipaddress = IPData(accessdata, users, self.provider)
                 ipaddress.lookup()
@@ -273,11 +278,12 @@ class AuthenticatedSensor(Entity):
                 "city": known.city,
             }
         with open(self.out, "w") as out_file:
-            yaml.dump(info, out_file, default_flow_style=False, explicit_start=True)
+            yaml.dump(info, out_file, default_flow_style=False,
+                      explicit_start=True)
 
 
 def get_outfile_content(file):
-    """Get the content of the outfile"""
+    """Get the content of the outfile."""
     with open(file) as out_file:
         content = yaml.load(out_file, Loader=yaml.FullLoader)
     out_file.close()
@@ -288,7 +294,7 @@ def get_outfile_content(file):
 
 
 def get_geo_data(ip_address, provider):
-    """Get geo data for an IP"""
+    """Get geo data for an IP."""
     result = {"result": False, "data": "none"}
     geo_data = PROVIDERS[provider](ip_address)
     geo_data.update_geo_info()
@@ -300,12 +306,10 @@ def get_geo_data(ip_address, provider):
 
 
 def get_hostname(ip_address):
-    """Return hostname for an IP"""
+    """Return hostname for an IP."""
     hostname = None
-    try:
+    with suppress(Exception):
         hostname = socket.getfqdn(ip_address)
-    except Exception:
-        pass
     return hostname
 
 
@@ -314,7 +318,7 @@ def load_authentications(authfile, exclude, exclude_clients):
     if not os.path.exists(authfile):
         _LOGGER.critical("File is missing %s", authfile)
         return False
-    with open(authfile, "r") as authfile:
+    with open(authfile) as authfile:
         auth = json.loads(authfile.read())
 
     users = {}
@@ -343,13 +347,15 @@ def load_authentications(authfile, exclude, exclude_clients):
                     tokens_cleaned[token["last_used_ip"]]["last_used_at"] = token[
                         "last_used_at"
                     ]
-                    tokens_cleaned[token["last_used_ip"]]["user_id"] = token["user_id"]
+                    tokens_cleaned[token["last_used_ip"]
+                                   ]["user_id"] = token["user_id"]
             else:
                 tokens_cleaned[token["last_used_ip"]] = {}
                 tokens_cleaned[token["last_used_ip"]]["last_used_at"] = token[
                     "last_used_at"
                 ]
-                tokens_cleaned[token["last_used_ip"]]["user_id"] = token["user_id"]
+                tokens_cleaned[token["last_used_ip"]
+                               ]["user_id"] = token["user_id"]
         except Exception:  # Gotta Catch 'Em All
             pass
 
@@ -376,6 +382,7 @@ class IPData:
     """IP Address class."""
 
     def __init__(self, access_data, users, provider, new=True):
+        """Initialize."""
         self.all_users = users
         self.provider = provider
         self.ip_address = access_data.ipaddr
@@ -409,23 +416,23 @@ class IPData:
         """Create persistant notification."""
         notify = hass.components.persistent_notification.create
         if self.country is not None:
-            country = "**Country:**   {}".format(self.country)
+            country = f"**Country:**   {self.country}"
         else:
             country = ""
         if self.hostname is not None:
-            hostname = "**Hostname:**   {}".format(self.hostname)
+            hostname = f"**Hostname:**   {self.hostname}"
         else:
             hostname = ""
         if self.region is not None:
-            region = "**Region:**   {}".format(self.region)
+            region = f"**Region:**   {self.region}"
         else:
             region = ""
         if self.city is not None:
-            city = "**City:**   {}".format(self.city)
+            city = f"**City:**   {self.city}"
         else:
             city = ""
         if self.last_used_at is not None:
-            last_used_at = "**Login time:**   {}".format(self.last_used_at[:19])
+            last_used_at = f"**Login time:**   {self.last_used_at[:19]}"
         else:
             last_used_at = ""
         message = """
@@ -445,4 +452,5 @@ class IPData:
             city,
             last_used_at.replace("T", " "),
         )
-        notify(message, title="New successful login", notification_id=self.ip_address)
+        notify(message, title="New successful login",
+               notification_id=self.ip_address)

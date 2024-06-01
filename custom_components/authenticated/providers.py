@@ -1,4 +1,4 @@
-"""Providers"""
+"""Providers."""
 import logging
 import requests
 from . import AuthenticatedBaseException
@@ -9,7 +9,7 @@ PROVIDERS = {}
 
 
 def register_provider(classname):
-    """Decorator used to register providers."""
+    """Register providers when used as a decorator."""
     PROVIDERS[classname.name] = classname
     return classname
 

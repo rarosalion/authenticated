@@ -1,0 +1,10 @@
+---
+127.0.0.1:
+  city: null
+  country: null
+  hostname: localhost
+  last_used_at: '2024-06-01T03:59:23.656776+00:00'
+  prev_used_at: '2024-06-01T03:55:42.678351+00:00'
+  region: null
+  user_id: 40fc35b4e82840acb428d021f2c4339d
+  username: user

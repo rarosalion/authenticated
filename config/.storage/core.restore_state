@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.restore_state",
+  "data": [
+    {
+      "state": {"entity_id":"person.user","state":"unknown","attributes":{"editable":true,"id":"user","device_trackers":[],"user_id":"40fc35b4e82840acb428d021f2c4339d","friendly_name":"user"},"last_changed":"2024-06-01T03:49:08.446537+00:00","last_reported":"2024-06-01T03:56:45.888294+00:00","last_updated":"2024-06-01T03:49:08.446537+00:00","context":{"id":"01HZ8YMQ6YJ7R4K0VCD1TJJRD6","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-06-01T03:57:13.457843+00:00"
+    },
+    {
+      "state": {"entity_id":"conversation.home_assistant","state":"unknown","attributes":{"friendly_name":"Home Assistant"},"last_changed":"2024-06-01T03:56:45.885903+00:00","last_reported":"2024-06-01T03:56:45.885903+00:00","last_updated":"2024-06-01T03:56:45.885903+00:00","context":{"id":"01HZ8Z2NXXNM1MBJBM7MFTJ6M1","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-06-01T03:57:13.457843+00:00"
+    }
+  ]
+}

@@ -1,0 +1,1058 @@
+2024-06-01 03:42:58.193 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration authenticated which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2024-06-01 03:42:58.302 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-1' coro=<setup_and_run_hass() running at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/runner.py:156> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/tasks.py:712> cb=[_run_until_complete_cb() at /usr/local/lib/python3.12/asyncio/base_events.py:182] created at /usr/local/lib/python3.12/asyncio/tasks.py:695> took 0.106 seconds
+2024-06-01 03:43:18.503 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-1' coro=<setup_and_run_hass() running at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/runner.py:156> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/tasks.py:712> cb=[_run_until_complete_cb() at /usr/local/lib/python3.12/asyncio/base_events.py:182] created at /usr/local/lib/python3.12/asyncio/tasks.py:695> took 0.128 seconds
+2024-06-01 03:43:18.567 INFO (MainThread) [homeassistant.setup] Setup of domain logger took 0.13 seconds
+2024-06-01 03:43:18.567 INFO (MainThread) [homeassistant.setup] Setup of domain system_log took 0.07 seconds
+2024-06-01 03:43:18.568 INFO (MainThread) [homeassistant.bootstrap] Setting up frontend, recorder: {'frontend', 'recorder'}
+2024-06-01 03:43:18.635 INFO (MainThread) [homeassistant.setup] Setting up http
+2024-06-01 03:43:18.701 INFO (MainThread) [homeassistant.setup] Setting up device_automation
+2024-06-01 03:43:18.701 INFO (MainThread) [homeassistant.setup] Setup of domain device_automation took 0.00 seconds
+2024-06-01 03:43:18.776 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-1' coro=<setup_and_run_hass() running at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/runner.py:156> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/tasks.py:712> cb=[_run_until_complete_cb() at /usr/local/lib/python3.12/asyncio/base_events.py:182] created at /usr/local/lib/python3.12/asyncio/tasks.py:695> took 0.208 seconds
+2024-06-01 03:43:18.847 INFO (MainThread) [homeassistant.setup] Setup of domain http took 0.21 seconds
+2024-06-01 03:43:18.863 INFO (MainThread) [homeassistant.setup] Setting up auth
+2024-06-01 03:43:18.870 INFO (MainThread) [homeassistant.setup] Setup of domain auth took 0.01 seconds
+2024-06-01 03:43:18.898 INFO (MainThread) [homeassistant.setup] Setting up config
+2024-06-01 03:43:18.904 INFO (MainThread) [homeassistant.setup] Setup of domain config took 0.01 seconds
+2024-06-01 03:43:18.919 INFO (MainThread) [homeassistant.setup] Setting up diagnostics
+2024-06-01 03:43:18.922 INFO (MainThread) [homeassistant.setup] Setup of domain diagnostics took 0.00 seconds
+2024-06-01 03:43:18.923 INFO (MainThread) [homeassistant.setup] Setting up file_upload
+2024-06-01 03:43:18.951 INFO (MainThread) [homeassistant.setup] Setup of domain file_upload took 0.00 seconds
+2024-06-01 03:43:19.000 INFO (MainThread) [homeassistant.setup] Setting up repairs
+2024-06-01 03:43:19.013 INFO (MainThread) [homeassistant.setup] Setup of domain repairs took 0.00 seconds
+2024-06-01 03:43:19.035 INFO (MainThread) [homeassistant.setup] Setting up api
+2024-06-01 03:43:19.041 INFO (MainThread) [homeassistant.setup] Setup of domain api took 0.01 seconds
+2024-06-01 03:43:19.135 INFO (MainThread) [homeassistant.setup] Setting up image_upload
+2024-06-01 03:43:19.227 INFO (MainThread) [homeassistant.setup] Setup of domain image_upload took 0.09 seconds
+2024-06-01 03:43:19.240 INFO (MainThread) [homeassistant.setup] Setting up person
+2024-06-01 03:43:19.289 INFO (MainThread) [homeassistant.setup] Setup of domain person took 0.05 seconds
+2024-06-01 03:43:19.290 INFO (MainThread) [homeassistant.setup] Setting up onboarding
+2024-06-01 03:43:19.300 INFO (MainThread) [homeassistant.setup] Setting up recorder
+2024-06-01 03:43:19.323 INFO (MainThread) [homeassistant.setup] Setup of domain onboarding took 0.03 seconds
+2024-06-01 03:43:19.325 INFO (MainThread) [homeassistant.setup] Setting up lovelace
+2024-06-01 03:43:19.406 INFO (MainThread) [homeassistant.setup] Setup of domain lovelace took 0.08 seconds
+2024-06-01 03:43:20.044 INFO (MainThread) [homeassistant.setup] Setup of domain recorder took 0.74 seconds
+2024-06-01 03:43:20.047 INFO (MainThread) [homeassistant.setup] Setting up websocket_api
+2024-06-01 03:43:20.059 INFO (MainThread) [homeassistant.setup] Setup of domain websocket_api took 0.01 seconds
+2024-06-01 03:43:20.068 INFO (MainThread) [homeassistant.setup] Setting up search
+2024-06-01 03:43:20.072 INFO (MainThread) [homeassistant.setup] Setup of domain search took 0.00 seconds
+2024-06-01 03:43:20.093 INFO (SyncWorker_3) [homeassistant.util.package] Attempting install of home-assistant-frontend==20240501.1
+2024-06-01 03:47:31.107 INFO (MainThread) [homeassistant.setup] Setting up frontend
+2024-06-01 03:47:31.121 INFO (MainThread) [homeassistant.setup] Setup of domain frontend took 0.01 seconds
+2024-06-01 03:47:31.138 INFO (MainThread) [homeassistant.bootstrap] Setting up stage 1: {'ssdp', 'usb', 'cloud', 'network', 'api', 'webhook', 'websocket_api', 'auth', 'bluetooth', 'repairs', 'dhcp', 'zeroconf', 'http'}
+2024-06-01 03:47:31.147 INFO (MainThread) [homeassistant.setup] Setting up network
+2024-06-01 03:47:31.158 INFO (MainThread) [homeassistant.setup] Setup of domain network took 0.01 seconds
+2024-06-01 03:47:31.167 INFO (MainThread) [homeassistant.setup] Setting up webhook
+2024-06-01 03:47:31.175 INFO (MainThread) [homeassistant.setup] Setup of domain webhook took 0.01 seconds
+2024-06-01 03:47:31.194 INFO (MainThread) [asyncio] <Server sockets=(<asyncio.TransportSocket fd=12, family=2, type=1, proto=6, laddr=('0.0.0.0', 8123)>, <asyncio.TransportSocket fd=13, family=10, type=1, proto=6, laddr=('::', 8123, 0, 0)>)> is serving
+2024-06-01 03:47:31.197 INFO (MainThread) [homeassistant.components.http] Now listening on port 8123
+2024-06-01 03:47:31.200 INFO (MainThread) [homeassistant.setup] Setup of domain http took 0.08 seconds
+2024-06-01 03:47:31.217 INFO (SyncWorker_2) [homeassistant.util.package] Attempting install of async-upnp-client==0.38.3
+2024-06-01 03:47:46.634 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-39' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.209 seconds
+2024-06-01 03:47:46.839 WARNING (MainThread) [asyncio] Executing <Handle cancelled _UnixSelectorEventLoop._sock_sendfile_native_impl(<Future pendi...events.py:449>, 11, <socket.socke....0.1', 55998)>, 14, 1127, 1127, 1127, 1127) created at /usr/local/lib/python3.12/asyncio/selector_events.py:317> took 0.123 seconds
+2024-06-01 03:47:47.096 WARNING (MainThread) [asyncio] Executing <Handle _chain_future.<locals>._set_state(<Future finis...events.py:449>, <Future at 0x...ufferedReader>) at /usr/local/lib/python3.12/asyncio/futures.py:381 created at /usr/local/lib/python3.12/asyncio/futures.py:403> took 0.108 seconds
+2024-06-01 03:47:49.466 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-42' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.126 seconds
+2024-06-01 03:47:50.271 WARNING (MainThread) [asyncio] Executing <Handle _chain_future.<locals>._set_state(<Future finis...events.py:449>, <Future at 0x...rned NoneType>) at /usr/local/lib/python3.12/asyncio/futures.py:381 created at /usr/local/lib/python3.12/asyncio/futures.py:403> took 0.127 seconds
+2024-06-01 03:47:51.137 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-45' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.102 seconds
+2024-06-01 03:47:51.386 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-37' coro=<RequestHandler.start() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:531> wait_for=<Task pending name='Task-46' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:442> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:289> took 0.162 seconds
+2024-06-01 03:47:51.886 WARNING (MainThread) [asyncio] Executing <Handle _chain_future.<locals>._set_state(<Future finis...events.py:449>, <Future at 0x...ufferedReader>) at /usr/local/lib/python3.12/asyncio/futures.py:381 created at /usr/local/lib/python3.12/asyncio/futures.py:403> took 0.255 seconds
+2024-06-01 03:47:52.521 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-50' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.297 seconds
+2024-06-01 03:47:52.647 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-37' coro=<RequestHandler.start() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:531> wait_for=<Task pending name='Task-51' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:442> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:289> took 0.126 seconds
+2024-06-01 03:47:53.615 WARNING (MainThread) [asyncio] Executing <Handle shield.<locals>._inner_done_callback(<Future finis...events.py:449>) at /usr/local/lib/python3.12/asyncio/tasks.py:905 created at /usr/local/lib/python3.12/asyncio/futures.py:362> took 0.132 seconds
+2024-06-01 03:47:54.568 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-70' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:452> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, <1 more>, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.101 seconds
+2024-06-01 03:47:54.785 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-70' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.185 seconds
+2024-06-01 03:47:54.947 WARNING (MainThread) [asyncio] Executing <Handle _chain_future.<locals>._set_state(<Future finis...events.py:449>, <Future at 0x...ufferedReader>) at /usr/local/lib/python3.12/asyncio/futures.py:381 created at /usr/local/lib/python3.12/asyncio/futures.py:403> took 0.130 seconds
+2024-06-01 03:47:56.994 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-86' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.339 seconds
+2024-06-01 03:47:57.385 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-85' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.232 seconds
+2024-06-01 03:47:57.530 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-85' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.121 seconds
+2024-06-01 03:47:57.993 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-86' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.458 seconds
+2024-06-01 03:47:58.322 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-89' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.212 seconds
+2024-06-01 03:47:58.896 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-94' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:452> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, <1 more>, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.190 seconds
+2024-06-01 03:47:59.199 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-96' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:452> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, <1 more>, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.201 seconds
+2024-06-01 03:47:59.427 WARNING (MainThread) [asyncio] Executing <Handle _chain_future.<locals>._set_state(<Future finis...events.py:449>, <Future at 0x...eturned tuple>) at /usr/local/lib/python3.12/asyncio/futures.py:381 created at /usr/local/lib/python3.12/asyncio/futures.py:403> took 0.176 seconds
+2024-06-01 03:47:59.665 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-96' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.210 seconds
+2024-06-01 03:48:00.352 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-99' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.266 seconds
+2024-06-01 03:48:00.817 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-59' coro=<RequestHandler.start() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:531> wait_for=<Task pending name='Task-101' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:442> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:289> took 0.112 seconds
+2024-06-01 03:48:01.394 WARNING (MainThread) [asyncio] Executing <Task finished name='Task-105' coro=<RequestHandler._handle_request() done, defined at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:442> result=(<Response Found eof>, False) created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.148 seconds
+2024-06-01 03:48:04.213 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-111' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.174 seconds
+2024-06-01 03:48:04.436 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-111' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.188 seconds
+2024-06-01 03:48:05.532 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-115' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.134 seconds
+2024-06-01 03:48:06.019 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-116' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.112 seconds
+2024-06-01 03:48:07.251 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-119' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:452> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, <1 more>, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.402 seconds
+2024-06-01 03:48:07.573 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-119' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.227 seconds
+2024-06-01 03:48:09.362 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-122' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.233 seconds
+2024-06-01 03:48:09.682 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-37' coro=<RequestHandler.start() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:505> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:289> took 0.288 seconds
+2024-06-01 03:48:10.391 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-123' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.252 seconds
+2024-06-01 03:48:12.357 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-129' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.110 seconds
+2024-06-01 03:48:12.967 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-131' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.183 seconds
+2024-06-01 03:48:13.223 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-132' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:452> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, <1 more>, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.131 seconds
+2024-06-01 03:48:13.431 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-132' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.197 seconds
+2024-06-01 03:48:14.361 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-133' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.104 seconds
+2024-06-01 03:48:14.835 WARNING (MainThread) [asyncio] Executing <Handle _chain_future.<locals>._set_state(<Future finis...events.py:449>, <Future at 0x...ufferedReader>) at /usr/local/lib/python3.12/asyncio/futures.py:381 created at /usr/local/lib/python3.12/asyncio/futures.py:403> took 0.149 seconds
+2024-06-01 03:48:15.016 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-134' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.181 seconds
+2024-06-01 03:48:15.551 WARNING (MainThread) [asyncio] Executing <Handle BaseSelectorEventLoop._read_from_self()> took 0.128 seconds
+2024-06-01 03:48:16.043 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-136' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.104 seconds
+2024-06-01 03:48:17.335 WARNING (MainThread) [asyncio] Executing <Handle _chain_future.<locals>._set_state(<Future finis...events.py:449>, <Future at 0x...rned NoneType>) at /usr/local/lib/python3.12/asyncio/futures.py:381 created at /usr/local/lib/python3.12/asyncio/futures.py:403> took 0.148 seconds
+2024-06-01 03:48:17.524 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-37' coro=<RequestHandler.start() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:531> wait_for=<Task pending name='Task-140' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:442> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:289> took 0.124 seconds
+2024-06-01 03:48:18.058 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-140' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.317 seconds
+2024-06-01 03:48:19.180 WARNING (MainThread) [asyncio] Executing <Handle _chain_future.<locals>._set_state(<Future finis...events.py:449>, <Future at 0x...rned NoneType>) at /usr/local/lib/python3.12/asyncio/futures.py:381 created at /usr/local/lib/python3.12/asyncio/futures.py:403> took 0.107 seconds
+2024-06-01 03:48:19.315 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-144' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.104 seconds
+2024-06-01 03:48:19.816 WARNING (MainThread) [asyncio] Executing <Handle _chain_future.<locals>._set_state(<Future finis...events.py:449>, <Future at 0x...ned PosixPath>) at /usr/local/lib/python3.12/asyncio/futures.py:381 created at /usr/local/lib/python3.12/asyncio/futures.py:403> took 0.133 seconds
+2024-06-01 03:48:20.187 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-146' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.110 seconds
+2024-06-01 03:48:20.607 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-147' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.197 seconds
+2024-06-01 03:48:21.234 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-149' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.248 seconds
+2024-06-01 03:48:22.761 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-153' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.152 seconds
+2024-06-01 03:48:23.110 WARNING (MainThread) [asyncio] Executing <Handle cancelled _UnixSelectorEventLoop._sock_sendfile_native_impl(<Future pendi...events.py:449>, 11, <socket.socke....0.1', 55998)>, 16, 6975, 6975, 6975, 6975) created at /usr/local/lib/python3.12/asyncio/selector_events.py:317> took 0.162 seconds
+2024-06-01 03:48:23.793 WARNING (MainThread) [asyncio] Executing <Handle _chain_future.<locals>._set_state(<Future finis...events.py:449>, <Future at 0x...ned PosixPath>) at /usr/local/lib/python3.12/asyncio/futures.py:381 created at /usr/local/lib/python3.12/asyncio/futures.py:403> took 0.165 seconds
+2024-06-01 03:48:24.133 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-37' coro=<RequestHandler.start() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:505> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:289> took 0.102 seconds
+2024-06-01 03:48:26.073 WARNING (MainThread) [asyncio] Executing <Handle _chain_future.<locals>._set_state(<Future finis...events.py:449>, <Future at 0x...ufferedReader>) at /usr/local/lib/python3.12/asyncio/futures.py:381 created at /usr/local/lib/python3.12/asyncio/futures.py:403> took 0.223 seconds
+2024-06-01 03:48:26.192 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-161' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.118 seconds
+2024-06-01 03:48:26.821 WARNING (MainThread) [asyncio] Executing <Handle _SelectorSocketTransport._read_ready() created at /usr/local/lib/python3.12/asyncio/selector_events.py:280> took 0.169 seconds
+2024-06-01 03:48:27.387 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-164' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.127 seconds
+2024-06-01 03:48:27.712 WARNING (MainThread) [asyncio] Executing <Handle BaseSelectorEventLoop._read_from_self()> took 0.311 seconds
+2024-06-01 03:48:28.175 WARNING (MainThread) [asyncio] Executing <Handle shield.<locals>._inner_done_callback(<Future finis...events.py:449>) at /usr/local/lib/python3.12/asyncio/tasks.py:905 created at /usr/local/lib/python3.12/asyncio/futures.py:362> took 0.142 seconds
+2024-06-01 03:48:28.437 WARNING (MainThread) [asyncio] Executing <TimerHandle when=266967.893154871 _WatchPendingSetups._async_watch() created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/bootstrap.py:709> took 0.147 seconds
+2024-06-01 03:48:29.878 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-168' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.106 seconds
+2024-06-01 03:48:31.553 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-172' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.146 seconds
+2024-06-01 03:48:31.891 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-173' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.178 seconds
+2024-06-01 03:48:32.544 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-174' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.466 seconds
+2024-06-01 03:48:33.290 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-177' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:452> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, <1 more>, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.116 seconds
+2024-06-01 03:48:33.531 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-177' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.112 seconds
+2024-06-01 03:48:34.950 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-179' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.445 seconds
+2024-06-01 03:48:36.753 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-183' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.100 seconds
+2024-06-01 03:48:36.909 WARNING (MainThread) [asyncio] Executing <Handle _chain_future.<locals>._set_state(<Future finis...events.py:449>, <Future at 0x...rned NoneType>) at /usr/local/lib/python3.12/asyncio/futures.py:381 created at /usr/local/lib/python3.12/asyncio/futures.py:403> took 0.116 seconds
+2024-06-01 03:48:37.721 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-185' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.179 seconds
+2024-06-01 03:48:39.610 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-191' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.318 seconds
+2024-06-01 03:48:40.458 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-194' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.145 seconds
+2024-06-01 03:48:40.889 WARNING (MainThread) [asyncio] Executing <Handle _chain_future.<locals>._set_state(<Future finis...events.py:449>, <Future at 0x...ned PosixPath>) at /usr/local/lib/python3.12/asyncio/futures.py:381 created at /usr/local/lib/python3.12/asyncio/futures.py:403> took 0.107 seconds
+2024-06-01 03:48:42.236 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-199' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.110 seconds
+2024-06-01 03:48:42.359 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-199' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.121 seconds
+2024-06-01 03:48:42.953 WARNING (MainThread) [asyncio] Executing <Handle _chain_future.<locals>._set_state(<Future finis...events.py:449>, <Future at 0x...ned PosixPath>) at /usr/local/lib/python3.12/asyncio/futures.py:381 created at /usr/local/lib/python3.12/asyncio/futures.py:403> took 0.128 seconds
+2024-06-01 03:48:45.145 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-207' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.170 seconds
+2024-06-01 03:48:45.631 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-208' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.101 seconds
+2024-06-01 03:48:46.893 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-210' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.113 seconds
+2024-06-01 03:48:47.073 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-210' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.179 seconds
+2024-06-01 03:48:47.476 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-211' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.132 seconds
+2024-06-01 03:48:48.111 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-212' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.159 seconds
+2024-06-01 03:48:48.821 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-213' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.186 seconds
+2024-06-01 03:48:49.883 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-215' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.100 seconds
+2024-06-01 03:48:50.600 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-216' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.209 seconds
+2024-06-01 03:48:50.967 WARNING (MainThread) [asyncio] Executing <Handle cancelled _UnixSelectorEventLoop._sock_sendfile_native_impl(<Future pendi...events.py:449>, 11, <socket.socke....0.1', 55998)>, 16, 2733, 2733, 2733, 2733) created at /usr/local/lib/python3.12/asyncio/selector_events.py:317> took 0.133 seconds
+2024-06-01 03:48:51.317 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-218' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.137 seconds
+2024-06-01 03:48:51.447 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-218' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.112 seconds
+2024-06-01 03:48:51.620 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-218' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.170 seconds
+2024-06-01 03:48:52.145 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-220' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:452> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, <1 more>, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.135 seconds
+2024-06-01 03:48:52.989 WARNING (MainThread) [asyncio] Executing <Handle _chain_future.<locals>._set_state(<Future finis...events.py:449>, <Future at 0x...ufferedReader>) at /usr/local/lib/python3.12/asyncio/futures.py:381 created at /usr/local/lib/python3.12/asyncio/futures.py:403> took 0.190 seconds
+2024-06-01 03:48:54.302 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-222' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.125 seconds
+2024-06-01 03:48:55.132 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-223' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.195 seconds
+2024-06-01 03:48:55.452 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-223' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.140 seconds
+2024-06-01 03:48:55.768 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-224' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.287 seconds
+2024-06-01 03:48:57.199 WARNING (MainThread) [asyncio] Executing <Handle cancelled _UnixSelectorEventLoop._sock_sendfile_native_impl(<Future pendi...events.py:449>, 11, <socket.socke....0.1', 55998)>, 16, 66224, 66224, 66224, 66224) created at /usr/local/lib/python3.12/asyncio/selector_events.py:317> took 0.113 seconds
+2024-06-01 03:48:58.741 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-235' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.107 seconds
+2024-06-01 03:48:59.376 WARNING (MainThread) [asyncio] Executing <Handle shield.<locals>._inner_done_callback(<Future finis...events.py:449>) at /usr/local/lib/python3.12/asyncio/tasks.py:905 created at /usr/local/lib/python3.12/asyncio/futures.py:362> took 0.107 seconds
+2024-06-01 03:48:59.596 WARNING (MainThread) [asyncio] Executing <Handle cancelled _UnixSelectorEventLoop._sock_sendfile_native_impl(<Future pendi...events.py:449>, 11, <socket.socke....0.1', 55998)>, 16, 3981, 3981, 3981, 3981) created at /usr/local/lib/python3.12/asyncio/selector_events.py:317> took 0.109 seconds
+2024-06-01 03:49:01.353 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-245' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.332 seconds
+2024-06-01 03:49:01.519 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-246' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.123 seconds
+2024-06-01 03:49:08.418 INFO (MainThread) [homeassistant.helpers.entity_registry] Registered new person.person entity: person.user
+2024-06-01 03:49:08.799 WARNING (MainThread) [asyncio] Executing <Task finished name='Task-250' coro=<RequestHandler._handle_request() done, defined at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:442> result=(<Response OK eof>, False) created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.138 seconds
+2024-06-01 03:49:12.099 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-255' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:452> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.427 seconds
+2024-06-01 03:49:12.325 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-255' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:452> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.224 seconds
+2024-06-01 03:49:12.589 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-255' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:452> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.102 seconds
+2024-06-01 03:49:13.183 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-255' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:452> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.408 seconds
+2024-06-01 03:49:13.312 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-255' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:452> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.113 seconds
+2024-06-01 03:49:14.077 WARNING (MainThread) [asyncio] Executing <Handle BaseSelectorEventLoop._read_from_self()> took 0.105 seconds
+2024-06-01 03:49:14.172 INFO (SyncWorker_27) [homeassistant.util.package] Attempting install of pyudev==0.24.1
+2024-06-01 03:49:14.541 WARNING (MainThread) [asyncio] Executing <Handle cancelled _UnixSelectorEventLoop._sock_sendfile_native_impl(<Future pendi...events.py:449>, 19, <socket.socke....0.1', 56014)>, 16, 3392, 3392, 3392, 3392) created at /usr/local/lib/python3.12/asyncio/selector_events.py:317> took 0.249 seconds
+2024-06-01 03:49:15.096 WARNING (MainThread) [asyncio] Executing <Handle _chain_future.<locals>._set_state(<Future finis...events.py:449>, <Future at 0x...ned PosixPath>) at /usr/local/lib/python3.12/asyncio/futures.py:381 created at /usr/local/lib/python3.12/asyncio/futures.py:403> took 0.378 seconds
+2024-06-01 03:49:15.395 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-261' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.158 seconds
+2024-06-01 03:49:15.582 WARNING (MainThread) [asyncio] Executing <Task finished name='Task-261' coro=<RequestHandler._handle_request() done, defined at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:442> result=(<FileResponse OK eof>, False) created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.119 seconds
+2024-06-01 03:49:15.744 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-262' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.161 seconds
+2024-06-01 03:49:16.017 INFO (MainThread) [homeassistant.setup] Setting up ssdp
+2024-06-01 03:49:16.140 WARNING (MainThread) [asyncio] Executing <Task pending name='setup component ssdp' coro=<async_setup_component() running at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/setup.py:166> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/tasks.py:712> cb=[set.remove(), gather.<locals>._done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:767] created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> took 0.147 seconds
+2024-06-01 03:49:16.185 INFO (MainThread) [homeassistant.setup] Setup of domain ssdp took 0.17 seconds
+2024-06-01 03:49:30.381 INFO (SyncWorker_21) [homeassistant.loader] Loaded google_translate from homeassistant.components.google_translate
+2024-06-01 03:49:30.382 INFO (SyncWorker_21) [homeassistant.loader] Loaded met from homeassistant.components.met
+2024-06-01 03:49:30.453 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-265' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:452> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/tasks.py:712> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.234 seconds
+2024-06-01 03:49:30.598 INFO (SyncWorker_29) [homeassistant.loader] Loaded radio_browser from homeassistant.components.radio_browser
+2024-06-01 03:49:30.598 INFO (SyncWorker_29) [homeassistant.loader] Loaded shopping_list from homeassistant.components.shopping_list
+2024-06-01 03:49:31.027 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-269' coro=<ConfigEntriesFlowManager.async_init() running at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/config_entries.py:1235> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[gather.<locals>._done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:767] created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> took 0.418 seconds
+2024-06-01 03:49:31.308 INFO (MainThread) [homeassistant.setup] Setting up analytics
+2024-06-01 03:49:31.345 INFO (MainThread) [homeassistant.setup] Setting up shopping_list
+2024-06-01 03:49:31.349 INFO (MainThread) [homeassistant.setup] Setup of domain shopping_list took 0.00 seconds
+2024-06-01 03:49:31.503 INFO (MainThread) [homeassistant.setup] Setup of domain analytics took 0.19 seconds
+2024-06-01 03:49:31.654 INFO (MainThread) [homeassistant.setup] Setting up todo
+2024-06-01 03:49:31.774 INFO (MainThread) [homeassistant.setup] Setup of domain todo took 0.11 seconds
+2024-06-01 03:49:31.775 INFO (MainThread) [homeassistant.components.todo] Setting up shopping_list.todo
+2024-06-01 03:49:31.781 INFO (MainThread) [homeassistant.helpers.entity_registry] Registered new todo.shopping_list entity: todo.shopping_list
+2024-06-01 03:49:31.789 WARNING (MainThread) [asyncio] Executing <Task finished name='config entry setup Shopping list shopping_list f23309cddb7768a4e7fffa92eca37b4c' coro=<ConfigEntry.async_setup_locked() done, defined at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/config_entries.py:716> result=None created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> took 0.257 seconds
+2024-06-01 03:49:32.201 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-256' coro=<WebSocketHandler._writer() running at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/websocket_api/http.py:138> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> took 0.412 seconds
+2024-06-01 03:49:33.418 WARNING (MainThread) [asyncio] Executing <TimerHandle cancelled when=267032.886263057 Store._async_schedule_callback_delayed_write() created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/storage.py:458> took 0.148 seconds
+2024-06-01 03:49:38.009 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140605151294400] Error handling message: Unknown error (unknown_error) user from 127.0.0.1 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:126.0) Gecko/20100101 Firefox/126.0)
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/websocket_api/decorators.py", line 27, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/websocket_api/commands.py", line 484, in handle_get_services
+    payload = await _async_get_all_descriptions_json(hass)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/websocket_api/commands.py", line 465, in _async_get_all_descriptions_json
+    descriptions = await async_get_all_descriptions(hass)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/service.py", line 711, in async_get_all_descriptions
+    contents = await hass.async_add_executor_job(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/service.py", line 655, in _load_services_files
+    return [_load_services_file(hass, integration) for integration in integrations]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/service.py", line 633, in _load_services_file
+    _SERVICES_SCHEMA(
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 272, in __call__
+    return self._compiled([], data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 595, in validate_dict
+    return base_validate(path, iteritems(data), out)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 387, in validate_mapping
+    cval = cvalue(key_path, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 229, in _run
+    return self._exec(self._compiled, value, path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 274, in _exec
+    return func(path, v)
+           ^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 818, in validate_callable
+    return schema(data)
+           ^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 272, in __call__
+    return self._compiled([], data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 595, in validate_dict
+    return base_validate(path, iteritems(data), out)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 387, in validate_mapping
+    cval = cvalue(key_path, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 229, in _run
+    return self._exec(self._compiled, value, path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 274, in _exec
+    return func(path, v)
+           ^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 818, in validate_callable
+    return schema(data)
+           ^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 272, in __call__
+    return self._compiled([], data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 595, in validate_dict
+    return base_validate(path, iteritems(data), out)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 387, in validate_mapping
+    cval = cvalue(key_path, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 229, in _run
+    return self._exec(self._compiled, value, path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 353, in _exec
+    v = func(path, v)
+        ^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 636, in validate_sequence
+    cval = validate(index_path, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 818, in validate_callable
+    return schema(data)
+           ^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 272, in __call__
+    return self._compiled([], data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 595, in validate_dict
+    return base_validate(path, iteritems(data), out)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 387, in validate_mapping
+    cval = cvalue(key_path, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 636, in validate_sequence
+    cval = validate(index_path, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 229, in _run
+    return self._exec(self._compiled, value, path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 353, in _exec
+    v = func(path, v)
+        ^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 818, in validate_callable
+    return schema(data)
+           ^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/selector.py", line 161, in _validate_supported_features
+    feature_mask |= _validate_supported_feature(supported_feature)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/selector.py", line 136, in _validate_supported_feature
+    known_entity_features = _entity_features()
+                            ^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/selector.py", line 92, in _entity_features
+    from homeassistant.components.camera import CameraEntityFeature
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/camera/__init__.py", line 31, in <module>
+    from homeassistant.components.stream import (
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/stream/__init__.py", line 64, in <module>
+    from .core import (
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/stream/core.py", line 15, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+2024-06-01 03:49:38.196 WARNING (MainThread) [asyncio] Executing <Task finished name='websocket_api.async:handle_get_services' coro=<_handle_async_response() done, defined at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/websocket_api/decorators.py:19> result=None created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> took 0.187 seconds
+2024-06-01 03:49:38.731 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-277' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.149 seconds
+2024-06-01 03:49:54.924 INFO (SyncWorker_27) [homeassistant.util.package] Attempting install of pyserial==3.5
+2024-06-01 03:49:59.509 WARNING (MainThread) [asyncio] Executing <TimerHandle when=267058.984087296 RequestHandler._process_keepalive() created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:437> took 0.188 seconds
+2024-06-01 03:50:24.406 WARNING (MainThread) [asyncio] Executing <TimerHandle cancelled when=267083.813996254 _weakref_handle((<weakref at 0...x7fe12862b260>, '_cleanup_closed')) at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/helpers.py:592 created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/helpers.py:612> took 0.112 seconds
+2024-06-01 03:50:31.380 WARNING (MainThread) [asyncio] Executing <Task finished name='Task-271' coro=<_GlobalTaskContext._on_wait() done, defined at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/timeout.py:244> result=None created at /usr/local/lib/python3.12/asyncio/tasks.py:420> took 0.184 seconds
+2024-06-01 03:50:31.570 WARNING (MainThread) [homeassistant.bootstrap] Setup timed out for stage 1 waiting on {<Task pending name='Task-278' coro=<Store._async_callback_delayed_write() running at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/storage.py:504> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, <1 more>, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[set.remove()] created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40>} - moving forward
+2024-06-01 03:50:31.711 INFO (SyncWorker_22) [homeassistant.util.package] Attempting install of gTTS==2.2.4
+2024-06-01 03:50:31.811 INFO (MainThread) [homeassistant.bootstrap] Setting up stage 2: {'lovelace', 'zone', 'schedule', 'stt', 'input_datetime', 'backup', 'trace', 'logbook', 'scene', 'history', 'device_automation', 'sensor', 'sun', 'input_text', 'ffmpeg', 'image_upload', 'intent', 'person', 'input_number', 'config', 'my', 'script', 'onboarding', 'stream', 'assist_pipeline', 'wake_word', 'energy', 'analytics', 'counter', 'tag', 'tts', 'default_config', 'homeassistant_alerts', 'conversation', 'hardware', 'application_credentials', 'file_upload', 'mobile_app', 'search', 'blueprint', 'diagnostics', 'system_health', 'input_boolean', 'input_select', 'map', 'input_button', 'timer', 'media_source', 'automation'}
+2024-06-01 03:50:31.944 INFO (MainThread) [homeassistant.setup] Setting up scene
+2024-06-01 03:50:31.951 INFO (MainThread) [homeassistant.components.scene] Setting up homeassistant.scene
+2024-06-01 03:50:32.023 INFO (MainThread) [homeassistant.setup] Setup of domain scene took 0.08 seconds
+2024-06-01 03:50:32.554 INFO (MainThread) [homeassistant.setup] Setting up zone
+2024-06-01 03:50:32.819 INFO (MainThread) [homeassistant.setup] Setting up history
+2024-06-01 03:50:32.826 INFO (MainThread) [homeassistant.setup] Setup of domain history took 0.01 seconds
+2024-06-01 03:50:32.828 INFO (MainThread) [homeassistant.setup] Setting up energy
+2024-06-01 03:50:32.830 INFO (MainThread) [homeassistant.setup] Setup of domain energy took 0.00 seconds
+2024-06-01 03:50:32.833 INFO (MainThread) [homeassistant.setup] Setting up logbook
+2024-06-01 03:50:32.941 INFO (MainThread) [homeassistant.setup] Setup of domain logbook took 0.11 seconds
+2024-06-01 03:50:33.961 INFO (MainThread) [homeassistant.setup] Setting up trace
+2024-06-01 03:50:33.962 INFO (MainThread) [homeassistant.setup] Setup of domain trace took 0.00 seconds
+2024-06-01 03:50:34.400 INFO (MainThread) [homeassistant.setup] Setting up blueprint
+2024-06-01 03:50:34.403 INFO (MainThread) [homeassistant.setup] Setup of domain blueprint took 0.00 seconds
+2024-06-01 03:50:34.842 INFO (MainThread) [homeassistant.setup] Setting up input_number
+2024-06-01 03:50:35.251 INFO (MainThread) [homeassistant.setup] Setting up system_health
+2024-06-01 03:50:35.446 INFO (MainThread) [homeassistant.setup] Setup of domain system_health took 0.19 seconds
+2024-06-01 03:50:35.497 INFO (MainThread) [homeassistant.setup] Setting up script
+2024-06-01 03:50:35.662 INFO (MainThread) [homeassistant.setup] Setup of domain script took 0.16 seconds
+2024-06-01 03:50:36.779 INFO (MainThread) [homeassistant.setup] Setting up automation
+2024-06-01 03:50:37.605 INFO (MainThread) [homeassistant.setup] Setup of domain automation took 0.83 seconds
+2024-06-01 03:50:38.112 WARNING (MainThread) [asyncio] Executing <Task cancelling name='Task-1' coro=<setup_and_run_hass() running at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/runner.py:156> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/tasks.py:712> cb=[_run_until_complete_cb() at /usr/local/lib/python3.12/asyncio/base_events.py:182] created at /usr/local/lib/python3.12/asyncio/tasks.py:695> took 6.489 seconds
+2024-06-01 03:50:38.262 WARNING (MainThread) [asyncio] Executing <TimerHandle when=267094 WebSocketResponse._send_heartbeat() created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/helpers.py:626> took 0.117 seconds
+2024-06-01 03:50:38.405 WARNING (MainThread) [asyncio] Executing <Handle _chain_future.<locals>._set_state(<Future finis...events.py:449>, <Future at 0x...eturned bytes>) at /usr/local/lib/python3.12/asyncio/futures.py:381 created at /usr/local/lib/python3.12/asyncio/futures.py:403> took 0.142 seconds
+2024-06-01 03:50:38.405 INFO (MainThread) [homeassistant.setup] Setting up stt
+2024-06-01 03:50:38.525 INFO (MainThread) [homeassistant.setup] Setup of domain stt took 0.12 seconds
+2024-06-01 03:50:38.528 WARNING (MainThread) [asyncio] Executing <Task finished name='setup component stt' coro=<async_setup_component() done, defined at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/setup.py:142> result=True created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> took 0.123 seconds
+2024-06-01 03:50:38.529 INFO (MainThread) [homeassistant.setup] Setting up intent
+2024-06-01 03:50:39.764 INFO (MainThread) [homeassistant.setup] Setup of domain intent took 1.23 seconds
+2024-06-01 03:50:39.946 WARNING (MainThread) [asyncio] Executing <Task finished name='setup intent as dependency of conversation' coro=<async_setup_component() done, defined at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/setup.py:142> result=True created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> took 1.236 seconds
+2024-06-01 03:50:40.080 INFO (MainThread) [homeassistant.setup] Setup of domain zone took 7.47 seconds
+2024-06-01 03:50:40.084 WARNING (MainThread) [asyncio] Executing <Task finished name='setup component zone' coro=<async_setup_component() done, defined at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/setup.py:142> result=True created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> took 0.136 seconds
+2024-06-01 03:50:40.157 INFO (MainThread) [homeassistant.setup] Setup of domain input_number took 5.31 seconds
+2024-06-01 03:50:40.388 WARNING (MainThread) [asyncio] Executing <Task finished name='setup component input_number' coro=<async_setup_component() done, defined at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/setup.py:142> result=True created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> took 0.288 seconds
+2024-06-01 03:50:40.396 INFO (MainThread) [homeassistant.setup] Setting up wake_word
+2024-06-01 03:50:40.405 INFO (MainThread) [homeassistant.setup] Setup of domain wake_word took 0.01 seconds
+2024-06-01 03:50:40.406 INFO (MainThread) [homeassistant.setup] Setting up homeassistant_alerts
+2024-06-01 03:50:40.407 INFO (MainThread) [homeassistant.setup] Setup of domain homeassistant_alerts took 0.00 seconds
+2024-06-01 03:50:40.970 WARNING (MainThread) [asyncio] Executing <Handle _SelectorSocketTransport._read_ready() created at /usr/local/lib/python3.12/asyncio/selector_events.py:280> took 0.553 seconds
+2024-06-01 03:50:41.009 INFO (MainThread) [homeassistant.setup] Setting up sensor
+2024-06-01 03:50:41.021 INFO (MainThread) [homeassistant.components.sensor] Setting up authenticated.sensor
+2024-06-01 03:50:41.026 INFO (SyncWorker_24) [custom_components.authenticated.sensor] 
+-------------------------------------------------------------------
+authenticated
+Version: main
+This is a custom component
+If you have any issues with this you need to open an issue here:
+https://github.com/custom-components/authenticated/issues
+-------------------------------------------------------------------
+
+2024-06-01 03:50:41.035 INFO (MainThread) [homeassistant.setup] Setup of domain sensor took 0.02 seconds
+2024-06-01 03:50:41.079 INFO (MainThread) [homeassistant.setup] Setting up map
+2024-06-01 03:50:41.090 DEBUG (SyncWorker_24) [custom_components.authenticated.sensor] File has not been created, no data pressent.
+2024-06-01 03:50:41.432 WARNING (MainThread) [asyncio] Executing <Task pending name='setup map as dependency of default_config' coro=<async_setup_component() running at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/setup.py:166> wait_for=<Task pending name='Storage load map' coro=<Store._async_load() running at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/storage.py:296> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, <1 more>, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[set.remove(), Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> cb=[gather.<locals>._done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:767] created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> took 0.356 seconds
+2024-06-01 03:50:42.739 INFO (MainThread) [homeassistant.setup] Setting up media_source
+2024-06-01 03:50:42.764 INFO (MainThread) [homeassistant.setup] Setup of domain media_source took 0.02 seconds
+2024-06-01 03:50:43.002 WARNING (MainThread) [asyncio] Executing <Task finished name='setup media_source as dependency of default_config' coro=<async_setup_component() done, defined at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/setup.py:142> result=True created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> took 0.538 seconds
+2024-06-01 03:50:43.003 INFO (MainThread) [homeassistant.setup] Setting up tag
+2024-06-01 03:50:44.003 WARNING (MainThread) [asyncio] Executing <Task pending name='setup tag as dependency of mobile_app' coro=<async_setup_component() running at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/setup.py:166> wait_for=<Task pending name='Storage load tag' coro=<Store._async_load() running at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/storage.py:296> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, <1 more>, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[set.remove(), Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> cb=[gather.<locals>._done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:767] created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> took 0.763 seconds
+2024-06-01 03:50:44.108 INFO (MainThread) [homeassistant.setup] Setting up my
+2024-06-01 03:50:44.227 INFO (MainThread) [homeassistant.setup] Setup of domain my took 0.12 seconds
+2024-06-01 03:50:44.250 WARNING (MainThread) [asyncio] Executing <Task finished name='setup my as dependency of default_config' coro=<async_setup_component() done, defined at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/setup.py:142> result=True created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> took 0.234 seconds
+2024-06-01 03:50:44.396 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-256' coro=<WebSocketHandler._writer() running at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/websocket_api/http.py:138> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> took 0.143 seconds
+2024-06-01 03:50:44.943 WARNING (MainThread) [asyncio] Executing <Handle _chain_future.<locals>._set_state(<Future finis...events.py:449>, <Future at 0x...turned module>) at /usr/local/lib/python3.12/asyncio/futures.py:381 created at /usr/local/lib/python3.12/asyncio/futures.py:403> took 0.545 seconds
+2024-06-01 03:50:45.010 INFO (MainThread) [homeassistant.setup] Setting up sun
+2024-06-01 03:50:45.021 INFO (MainThread) [homeassistant.setup] Setup of domain sun took 0.01 seconds
+2024-06-01 03:50:45.403 WARNING (MainThread) [asyncio] Executing <Task pending name='setup sun as dependency of default_config' coro=<async_setup_component() running at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/setup.py:166> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[gather.<locals>._done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:767] created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> took 0.392 seconds
+2024-06-01 03:50:45.724 WARNING (MainThread) [asyncio] Executing <Task finished name='Storage load tag' coro=<Store._async_load() done, defined at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/storage.py:289> result=None created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> took 0.320 seconds
+2024-06-01 03:50:45.725 INFO (MainThread) [homeassistant.setup] Setup of domain map took 4.64 seconds
+2024-06-01 03:50:45.727 INFO (MainThread) [homeassistant.setup] Setting up schedule
+2024-06-01 03:50:45.801 INFO (MainThread) [homeassistant.setup] Setting up input_datetime
+2024-06-01 03:50:45.957 WARNING (MainThread) [asyncio] Executing <Task pending name='setup component input_datetime' coro=<async_setup_component() running at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/setup.py:166> wait_for=<Task pending name='Storage load input_datetime' coro=<Store._async_load() running at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/storage.py:296> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, <1 more>, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[set.remove(), Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> cb=[set.remove(), gather.<locals>._done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:767] created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> took 0.155 seconds
+2024-06-01 03:50:45.957 INFO (MainThread) [homeassistant.setup] Setting up hardware
+2024-06-01 03:50:46.305 WARNING (MainThread) [asyncio] Executing <Task pending name='setup component hardware' coro=<async_setup_component() running at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/setup.py:166> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, <1 more>, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[set.remove(), gather.<locals>._done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:767] created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> took 0.348 seconds
+2024-06-01 03:50:46.464 WARNING (MainThread) [asyncio] Executing <Handle _chain_future.<locals>._set_state(<Future finis...events.py:449>, <Future at 0x...turned module>) at /usr/local/lib/python3.12/asyncio/futures.py:381 created at /usr/local/lib/python3.12/asyncio/futures.py:403> took 0.156 seconds
+2024-06-01 03:50:46.465 INFO (MainThread) [homeassistant.setup] Setting up input_text
+2024-06-01 03:50:46.478 INFO (MainThread) [homeassistant.setup] Setup of domain tag took 2.99 seconds
+2024-06-01 03:50:46.484 INFO (MainThread) [homeassistant.setup] Setting up application_credentials
+2024-06-01 03:50:46.842 WARNING (MainThread) [asyncio] Executing <Task pending name='setup component application_credentials' coro=<async_setup_component() running at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/setup.py:166> wait_for=<Task pending name='Storage load application_credentials' coro=<Store._async_load() running at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/storage.py:296> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, <1 more>, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[set.remove(), Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> cb=[set.remove(), gather.<locals>._done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:767] created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> took 0.356 seconds
+2024-06-01 03:50:47.355 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-284' coro=<_async_process_integration_platforms() running at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/integration_platform.py:241> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[set.remove()] created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> took 0.101 seconds
+2024-06-01 03:50:47.356 INFO (MainThread) [homeassistant.setup] Setting up input_boolean
+2024-06-01 03:50:47.920 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-255' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:452> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.361 seconds
+2024-06-01 03:50:47.940 INFO (MainThread) [homeassistant.setup] Setting up input_select
+2024-06-01 03:50:48.278 WARNING (MainThread) [asyncio] Executing <Task pending name='setup component input_select' coro=<async_setup_component() running at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/setup.py:166> wait_for=<Task pending name='Storage load input_select' coro=<Store._async_load() running at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/storage.py:296> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, <1 more>, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[set.remove(), Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> cb=[set.remove(), gather.<locals>._done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:767] created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> took 0.202 seconds
+2024-06-01 03:50:49.576 INFO (MainThread) [homeassistant.components.sensor] Setting up sun.sensor
+2024-06-01 03:50:50.214 INFO (MainThread) [homeassistant.helpers.entity_registry] Registered new sensor.sun entity: sensor.sun_next_dawn
+2024-06-01 03:50:50.216 INFO (MainThread) [homeassistant.helpers.entity_registry] Registered new sensor.sun entity: sensor.sun_next_dusk
+2024-06-01 03:50:50.218 INFO (MainThread) [homeassistant.helpers.entity_registry] Registered new sensor.sun entity: sensor.sun_next_midnight
+2024-06-01 03:50:50.220 INFO (MainThread) [homeassistant.helpers.entity_registry] Registered new sensor.sun entity: sensor.sun_next_noon
+2024-06-01 03:50:50.223 INFO (MainThread) [homeassistant.helpers.entity_registry] Registered new sensor.sun entity: sensor.sun_next_rising
+2024-06-01 03:50:50.259 INFO (MainThread) [homeassistant.helpers.entity_registry] Registered new sensor.sun entity: sensor.sun_next_setting
+2024-06-01 03:50:50.319 INFO (MainThread) [homeassistant.helpers.entity_registry] Registered new sensor.sun entity: sensor.sun_solar_elevation
+2024-06-01 03:50:50.334 INFO (MainThread) [homeassistant.helpers.entity_registry] Registered new sensor.sun entity: sensor.sun_solar_azimuth
+2024-06-01 03:50:50.435 INFO (MainThread) [homeassistant.helpers.entity_registry] Registered new sensor.sun entity: sensor.sun_solar_rising
+2024-06-01 03:50:50.533 WARNING (MainThread) [asyncio] Executing <Task finished name='setup sun as dependency of default_config' coro=<async_setup_component() done, defined at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/setup.py:142> result=True created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> took 2.250 seconds
+2024-06-01 03:50:50.533 INFO (MainThread) [homeassistant.setup] Setting up input_button
+2024-06-01 03:50:50.577 INFO (MainThread) [homeassistant.setup] Setting up timer
+2024-06-01 03:50:50.958 WARNING (MainThread) [asyncio] Executing <Task pending name='setup component timer' coro=<async_setup_component() running at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/setup.py:166> wait_for=<Task pending name='Storage load timer' coro=<Store._async_load() running at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/storage.py:295> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[set.remove(), Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> cb=[set.remove(), gather.<locals>._done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:767] created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> took 0.380 seconds
+2024-06-01 03:50:50.958 INFO (MainThread) [homeassistant.setup] Setting up counter
+2024-06-01 03:50:51.165 WARNING (MainThread) [asyncio] Executing <Task pending name='setup component counter' coro=<async_setup_component() running at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/setup.py:166> wait_for=<Task pending name='Storage load counter' coro=<Store._async_load() running at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/storage.py:295> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[set.remove(), Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> cb=[set.remove(), gather.<locals>._done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:767] created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> took 0.206 seconds
+2024-06-01 03:50:51.436 WARNING (MainThread) [asyncio] Executing <Task finished name='Storage load schedule' coro=<Store._async_load() done, defined at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/storage.py:289> result=None created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> took 0.256 seconds
+2024-06-01 03:50:51.437 INFO (MainThread) [homeassistant.components.sensor] Setting up energy.sensor
+2024-06-01 03:50:51.745 WARNING (MainThread) [asyncio] Executing <Handle _chain_future.<locals>._set_state(<Future finis...events.py:449>, <Future at 0x...PsutilWrapper>) at /usr/local/lib/python3.12/asyncio/futures.py:381 created at /usr/local/lib/python3.12/asyncio/futures.py:403> took 0.201 seconds
+2024-06-01 03:50:51.839 INFO (MainThread) [homeassistant.setup] Setup of domain schedule took 6.11 seconds
+2024-06-01 03:50:51.907 WARNING (MainThread) [homeassistant.components.sensor] Setup of sensor platform authenticated is taking over 10 seconds.
+2024-06-01 03:50:51.923 INFO (MainThread) [homeassistant.setup] Setup of domain input_datetime took 6.12 seconds
+2024-06-01 03:50:51.963 INFO (MainThread) [homeassistant.setup] Setup of domain hardware took 6.01 seconds
+2024-06-01 03:50:51.989 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140605151294400] Error handling message: Unknown error (unknown_error) user from 127.0.0.1 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:126.0) Gecko/20100101 Firefox/126.0)
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/websocket_api/decorators.py", line 27, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/websocket_api/commands.py", line 484, in handle_get_services
+    payload = await _async_get_all_descriptions_json(hass)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/websocket_api/commands.py", line 465, in _async_get_all_descriptions_json
+    descriptions = await async_get_all_descriptions(hass)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/service.py", line 711, in async_get_all_descriptions
+    contents = await hass.async_add_executor_job(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/service.py", line 655, in _load_services_files
+    return [_load_services_file(hass, integration) for integration in integrations]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/service.py", line 633, in _load_services_file
+    _SERVICES_SCHEMA(
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 272, in __call__
+    return self._compiled([], data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 595, in validate_dict
+    return base_validate(path, iteritems(data), out)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 387, in validate_mapping
+    cval = cvalue(key_path, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 229, in _run
+    return self._exec(self._compiled, value, path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 274, in _exec
+    return func(path, v)
+           ^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 818, in validate_callable
+    return schema(data)
+           ^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 272, in __call__
+    return self._compiled([], data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 595, in validate_dict
+    return base_validate(path, iteritems(data), out)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 387, in validate_mapping
+    cval = cvalue(key_path, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 229, in _run
+    return self._exec(self._compiled, value, path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 274, in _exec
+    return func(path, v)
+           ^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 818, in validate_callable
+    return schema(data)
+           ^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 272, in __call__
+    return self._compiled([], data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 595, in validate_dict
+    return base_validate(path, iteritems(data), out)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 387, in validate_mapping
+    cval = cvalue(key_path, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 229, in _run
+    return self._exec(self._compiled, value, path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 353, in _exec
+    v = func(path, v)
+        ^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 636, in validate_sequence
+    cval = validate(index_path, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 818, in validate_callable
+    return schema(data)
+           ^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 272, in __call__
+    return self._compiled([], data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 595, in validate_dict
+    return base_validate(path, iteritems(data), out)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 387, in validate_mapping
+    cval = cvalue(key_path, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 636, in validate_sequence
+    cval = validate(index_path, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 229, in _run
+    return self._exec(self._compiled, value, path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 353, in _exec
+    v = func(path, v)
+        ^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 818, in validate_callable
+    return schema(data)
+           ^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/selector.py", line 161, in _validate_supported_features
+    feature_mask |= _validate_supported_feature(supported_feature)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/selector.py", line 136, in _validate_supported_feature
+    known_entity_features = _entity_features()
+                            ^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/selector.py", line 92, in _entity_features
+    from homeassistant.components.camera import CameraEntityFeature
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/camera/__init__.py", line 31, in <module>
+    from homeassistant.components.stream import (
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/stream/__init__.py", line 64, in <module>
+    from .core import (
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/stream/core.py", line 15, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+2024-06-01 03:50:52.103 INFO (MainThread) [homeassistant.setup] Setup of domain input_text took 5.64 seconds
+2024-06-01 03:50:52.106 INFO (MainThread) [homeassistant.setup] Setup of domain application_credentials took 5.62 seconds
+2024-06-01 03:50:52.195 INFO (MainThread) [homeassistant.setup] Setup of domain input_boolean took 4.84 seconds
+2024-06-01 03:50:52.636 INFO (MainThread) [homeassistant.setup] Setup of domain input_select took 4.70 seconds
+2024-06-01 03:50:52.636 WARNING (MainThread) [asyncio] Executing <Task finished name='setup component input_select' coro=<async_setup_component() done, defined at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/setup.py:142> result=True created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> took 0.434 seconds
+2024-06-01 03:50:52.791 INFO (MainThread) [homeassistant.setup] Setup of domain input_button took 2.26 seconds
+2024-06-01 03:50:52.804 INFO (MainThread) [homeassistant.setup] Setup of domain timer took 2.23 seconds
+2024-06-01 03:50:52.820 INFO (MainThread) [homeassistant.setup] Setup of domain counter took 1.86 seconds
+2024-06-01 03:50:52.929 WARNING (MainThread) [asyncio] Executing <Handle set.remove(<Task finishe.../async_.py:40>) created at /usr/local/lib/python3.12/asyncio/events.py:88> took 0.104 seconds
+2024-06-01 03:50:53.274 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-255' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:452> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.247 seconds
+2024-06-01 03:50:57.693 DEBUG (SyncWorker_53) [custom_components.authenticated.sensor] Users {'1132b42d49324149bf1d745d8614f36d': 'Home Assistant Content', '40fc35b4e82840acb428d021f2c4339d': 'user'}
+2024-06-01 03:50:57.694 DEBUG (SyncWorker_53) [custom_components.authenticated.sensor] Access {'127.0.0.1': {'last_used_at': '2024-06-01T03:49:08.708527+00:00', 'user_id': '40fc35b4e82840acb428d021f2c4339d'}}
+2024-06-01 03:50:59.145 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140605151294400] Error handling message: Unknown error (unknown_error) user from 127.0.0.1 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:126.0) Gecko/20100101 Firefox/126.0)
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/websocket_api/decorators.py", line 27, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/websocket_api/commands.py", line 484, in handle_get_services
+    payload = await _async_get_all_descriptions_json(hass)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/websocket_api/commands.py", line 465, in _async_get_all_descriptions_json
+    descriptions = await async_get_all_descriptions(hass)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/service.py", line 711, in async_get_all_descriptions
+    contents = await hass.async_add_executor_job(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/service.py", line 655, in _load_services_files
+    return [_load_services_file(hass, integration) for integration in integrations]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/service.py", line 633, in _load_services_file
+    _SERVICES_SCHEMA(
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 272, in __call__
+    return self._compiled([], data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 595, in validate_dict
+    return base_validate(path, iteritems(data), out)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 387, in validate_mapping
+    cval = cvalue(key_path, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 229, in _run
+    return self._exec(self._compiled, value, path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 274, in _exec
+    return func(path, v)
+           ^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 818, in validate_callable
+    return schema(data)
+           ^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 272, in __call__
+    return self._compiled([], data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 595, in validate_dict
+    return base_validate(path, iteritems(data), out)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 387, in validate_mapping
+    cval = cvalue(key_path, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 229, in _run
+    return self._exec(self._compiled, value, path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 274, in _exec
+    return func(path, v)
+           ^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 818, in validate_callable
+    return schema(data)
+           ^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 272, in __call__
+    return self._compiled([], data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 595, in validate_dict
+    return base_validate(path, iteritems(data), out)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 387, in validate_mapping
+    cval = cvalue(key_path, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 229, in _run
+    return self._exec(self._compiled, value, path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 353, in _exec
+    v = func(path, v)
+        ^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 636, in validate_sequence
+    cval = validate(index_path, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 818, in validate_callable
+    return schema(data)
+           ^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 272, in __call__
+    return self._compiled([], data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 595, in validate_dict
+    return base_validate(path, iteritems(data), out)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 387, in validate_mapping
+    cval = cvalue(key_path, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 636, in validate_sequence
+    cval = validate(index_path, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 229, in _run
+    return self._exec(self._compiled, value, path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 353, in _exec
+    v = func(path, v)
+        ^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 818, in validate_callable
+    return schema(data)
+           ^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/selector.py", line 161, in _validate_supported_features
+    feature_mask |= _validate_supported_feature(supported_feature)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/selector.py", line 136, in _validate_supported_feature
+    known_entity_features = _entity_features()
+                            ^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/selector.py", line 92, in _entity_features
+    from homeassistant.components.camera import CameraEntityFeature
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/camera/__init__.py", line 31, in <module>
+    from homeassistant.components.stream import (
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/stream/__init__.py", line 64, in <module>
+    from .core import (
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/stream/core.py", line 15, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+2024-06-01 03:50:59.560 WARNING (MainThread) [asyncio] Executing <Task finished name='websocket_api.async:handle_get_services' coro=<_handle_async_response() done, defined at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/websocket_api/decorators.py:19> result=None created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> took 0.416 seconds
+2024-06-01 03:51:00.089 WARNING (MainThread) [asyncio] Executing <Handle _SelectorSocketTransport._read_ready() created at /usr/local/lib/python3.12/asyncio/selector_events.py:280> took 0.128 seconds
+2024-06-01 03:51:00.202 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-255' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:452> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.112 seconds
+2024-06-01 03:51:04.216 WARNING (MainThread) [asyncio] Executing <Handle _chain_future.<locals>._set_state(<Future cance...events.py:449>, <Future at 0x...eturned tuple>) at /usr/local/lib/python3.12/asyncio/futures.py:381 created at /usr/local/lib/python3.12/asyncio/futures.py:403> took 0.110 seconds
+2024-06-01 03:51:08.105 WARNING (MainThread) [asyncio] Executing <TimerHandle cancelled when=267127.392408556 _weakref_handle((<weakref at 0...x7fe12862b260>, '_cleanup_closed')) at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/helpers.py:592 created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/helpers.py:612> took 0.363 seconds
+2024-06-01 03:51:41.765 WARNING (MainThread) [asyncio] Executing <TimerHandle when=267161.228701035 _WatchPendingSetups._async_watch() created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/bootstrap.py:709> took 0.117 seconds
+2024-06-01 03:51:49.594 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-267' coro=<ConfigEntriesFlowManager.async_init() running at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/config_entries.py:1235> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, <1 more>, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[gather.<locals>._done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:767] created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> took 0.206 seconds
+2024-06-01 03:51:49.609 ERROR (MainThread) [homeassistant.config_entries] Error occurred loading flow for integration google_translate: No module named 'mutagen'
+2024-06-01 03:51:49.637 INFO (SyncWorker_2) [homeassistant.util.package] Attempting install of PyMetno==0.12.0
+2024-06-01 03:51:49.662 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/config_entries.py", line 2682, in _load_integration
+    await integration.async_get_platform("config_flow")
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/loader.py", line 1079, in async_get_platform
+    platforms = await self.async_get_platforms((platform_name,))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/loader.py", line 1156, in async_get_platforms
+    import_future.result()
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/loader.py", line 1126, in async_get_platforms
+    await self.hass.async_add_import_executor_job(
+  File "/usr/local/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/loader.py", line 1069, in _load_platforms
+    platform_name: self._load_platform(platform_name)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/loader.py", line 1243, in _load_platform
+    cache[full_name] = self._import_platform(platform_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/loader.py", line 1275, in _import_platform
+    return importlib.import_module(f"{self.pkg_path}.{platform_name}")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/loop.py", line 144, in protected_loop_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/google_translate/config_flow.py", line 9, in <module>
+    from homeassistant.components.tts import CONF_LANG
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/tts/__init__.py", line 22, in <module>
+    import mutagen
+ModuleNotFoundError: No module named 'mutagen'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py", line 452, in _handle_request
+    resp = await request_handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_app.py", line 543, in _handle
+    resp = await handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_middlewares.py", line 114, in impl
+    return await handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/http/security_filter.py", line 92, in security_filter_middleware
+    return await handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/http/forwarded.py", line 83, in forwarded_middleware
+    return await handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/http/request_context.py", line 26, in request_context_middleware
+    return await handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/http/ban.py", line 88, in ban_middleware
+    return await handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/aiohttp_session/__init__.py", line 199, in factory
+    response = await handler(request)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/http/auth.py", line 295, in auth_middleware
+    return await handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/http/headers.py", line 32, in headers_middleware
+    response = await handler(request)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/http.py", line 73, in handle
+    result = await handler(request, **request.match_info)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/onboarding/views.py", line 240, in post
+    await asyncio.gather(*(create_eager_task(coro) for coro in coros))
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/config_entries.py", line 1235, in async_init
+    flow, result = await self._async_init(flow_id, handler, context, data)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/config_entries.py", line 1255, in _async_init
+    flow = await self.async_create_flow(handler, context=context, data=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/config_entries.py", line 1392, in async_create_flow
+    handler = await _async_get_flow_handler(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/config_entries.py", line 2703, in _async_get_flow_handler
+    await _load_integration(hass, domain, hass_config)
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/config_entries.py", line 2689, in _load_integration
+    raise data_entry_flow.UnknownHandler from err
+homeassistant.data_entry_flow.UnknownHandler
+2024-06-01 03:51:49.984 WARNING (MainThread) [asyncio] Executing <Task finished name='Task-265' coro=<RequestHandler._handle_request() done, defined at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:442> result=(<Response Int...ver Error eof>, False) created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.334 seconds
+2024-06-01 03:51:54.309 WARNING (MainThread) [asyncio] Executing <TimerHandle when=267173.807495258 _WatchPendingSetups._async_watch() created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/bootstrap.py:709> took 0.135 seconds
+2024-06-01 03:51:58.344 DEBUG (SyncWorker_7) [custom_components.authenticated.sensor] Users {'1132b42d49324149bf1d745d8614f36d': 'Home Assistant Content', '40fc35b4e82840acb428d021f2c4339d': 'user'}
+2024-06-01 03:51:58.355 DEBUG (SyncWorker_7) [custom_components.authenticated.sensor] Access {'127.0.0.1': {'last_used_at': '2024-06-01T03:49:08.708527+00:00', 'user_id': '40fc35b4e82840acb428d021f2c4339d'}}
+2024-06-01 03:52:22.845 INFO (SyncWorker_37) [homeassistant.util.package] Attempting install of radios==0.3.1
+2024-06-01 03:52:58.205 DEBUG (SyncWorker_6) [custom_components.authenticated.sensor] Users {'1132b42d49324149bf1d745d8614f36d': 'Home Assistant Content', '40fc35b4e82840acb428d021f2c4339d': 'user'}
+2024-06-01 03:52:58.205 DEBUG (SyncWorker_6) [custom_components.authenticated.sensor] Access {'127.0.0.1': {'last_used_at': '2024-06-01T03:49:08.708527+00:00', 'user_id': '40fc35b4e82840acb428d021f2c4339d'}}
+2024-06-01 03:53:09.809 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-255' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:452> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.109 seconds
+2024-06-01 03:53:10.236 INFO (SyncWorker_1) [homeassistant.util.package] Attempting install of ha-ffmpeg==3.2.0
+2024-06-01 03:53:10.974 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-255' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:452> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.260 seconds
+2024-06-01 03:53:13.026 WARNING (MainThread) [asyncio] Executing <TimerHandle when=267252.389032661 _WatchPendingSetups._async_watch() created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/bootstrap.py:709> took 0.298 seconds
+2024-06-01 03:53:13.294 WARNING (MainThread) [asyncio] Executing <Handle RequestHandler.connection_made(<_SelectorSoc...e, bufsize=0>>) created at /usr/local/lib/python3.12/asyncio/selector_events.py:952> took 0.258 seconds
+2024-06-01 03:53:13.322 INFO (MainThread) [homeassistant.setup] Setting up radio_browser
+2024-06-01 03:53:13.348 INFO (MainThread) [homeassistant.setup] Setup of domain radio_browser took 0.03 seconds
+2024-06-01 03:53:40.430 INFO (MainThread) [homeassistant.setup] Setting up ffmpeg
+2024-06-01 03:53:40.434 INFO (SyncWorker_20) [homeassistant.util.package] Attempting install of PyTurboJPEG==1.7.1
+2024-06-01 03:53:40.485 ERROR (MainThread) [haffmpeg.core] FFmpeg fails [Errno 2] No such file or directory: 'ffmpeg'
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.12/site-packages/haffmpeg/core.py", line 130, in open
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/asyncio/subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/asyncio/base_events.py", line 1744, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/asyncio/unix_events.py", line 211, in _make_subprocess_transport
+    transp = _UnixSubprocessTransport(self, protocol, args, shell,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/asyncio/base_subprocess.py", line 36, in __init__
+    self._start(args=args, shell=shell, stdin=stdin, stdout=stdout,
+  File "/usr/local/lib/python3.12/asyncio/unix_events.py", line 820, in _start
+    self._proc = subprocess.Popen(
+                 ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/local/lib/python3.12/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'
+2024-06-01 03:53:40.494 WARNING (MainThread) [haffmpeg.tools] Error starting FFmpeg.
+2024-06-01 03:53:40.494 INFO (MainThread) [homeassistant.setup] Setup of domain ffmpeg took 0.06 seconds
+2024-06-01 03:53:46.038 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-255' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:452> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.140 seconds
+2024-06-01 03:53:46.089 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140605151294400] Error handling message: Unknown error (unknown_error) user from 127.0.0.1 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:126.0) Gecko/20100101 Firefox/126.0)
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/websocket_api/decorators.py", line 27, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/websocket_api/commands.py", line 484, in handle_get_services
+    payload = await _async_get_all_descriptions_json(hass)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/websocket_api/commands.py", line 465, in _async_get_all_descriptions_json
+    descriptions = await async_get_all_descriptions(hass)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/service.py", line 711, in async_get_all_descriptions
+    contents = await hass.async_add_executor_job(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/service.py", line 655, in _load_services_files
+    return [_load_services_file(hass, integration) for integration in integrations]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/service.py", line 633, in _load_services_file
+    _SERVICES_SCHEMA(
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 272, in __call__
+    return self._compiled([], data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 595, in validate_dict
+    return base_validate(path, iteritems(data), out)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 387, in validate_mapping
+    cval = cvalue(key_path, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 229, in _run
+    return self._exec(self._compiled, value, path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 274, in _exec
+    return func(path, v)
+           ^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 818, in validate_callable
+    return schema(data)
+           ^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 272, in __call__
+    return self._compiled([], data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 595, in validate_dict
+    return base_validate(path, iteritems(data), out)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 387, in validate_mapping
+    cval = cvalue(key_path, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 229, in _run
+    return self._exec(self._compiled, value, path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 274, in _exec
+    return func(path, v)
+           ^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 818, in validate_callable
+    return schema(data)
+           ^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 272, in __call__
+    return self._compiled([], data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 595, in validate_dict
+    return base_validate(path, iteritems(data), out)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 387, in validate_mapping
+    cval = cvalue(key_path, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 229, in _run
+    return self._exec(self._compiled, value, path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 353, in _exec
+    v = func(path, v)
+        ^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 636, in validate_sequence
+    cval = validate(index_path, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 818, in validate_callable
+    return schema(data)
+           ^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 272, in __call__
+    return self._compiled([], data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 595, in validate_dict
+    return base_validate(path, iteritems(data), out)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 387, in validate_mapping
+    cval = cvalue(key_path, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 636, in validate_sequence
+    cval = validate(index_path, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 229, in _run
+    return self._exec(self._compiled, value, path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/validators.py", line 353, in _exec
+    v = func(path, v)
+        ^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/voluptuous/schema_builder.py", line 818, in validate_callable
+    return schema(data)
+           ^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/selector.py", line 161, in _validate_supported_features
+    feature_mask |= _validate_supported_feature(supported_feature)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/selector.py", line 136, in _validate_supported_feature
+    known_entity_features = _entity_features()
+                            ^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/helpers/selector.py", line 92, in _entity_features
+    from homeassistant.components.camera import CameraEntityFeature
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/camera/__init__.py", line 31, in <module>
+    from homeassistant.components.stream import (
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/stream/__init__.py", line 64, in <module>
+    from .core import (
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/stream/core.py", line 15, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+2024-06-01 03:53:58.234 DEBUG (SyncWorker_29) [custom_components.authenticated.sensor] Users {'1132b42d49324149bf1d745d8614f36d': 'Home Assistant Content', '40fc35b4e82840acb428d021f2c4339d': 'user'}
+2024-06-01 03:53:58.234 DEBUG (SyncWorker_29) [custom_components.authenticated.sensor] Access {'127.0.0.1': {'last_used_at': '2024-06-01T03:49:08.708527+00:00', 'user_id': '40fc35b4e82840acb428d021f2c4339d'}}
+2024-06-01 03:54:21.512 INFO (SyncWorker_20) [homeassistant.util.package] Attempting install of ha-av==10.1.1
+2024-06-01 03:54:47.603 INFO (SyncWorker_15) [homeassistant.util.package] Attempting install of securetar==2024.2.1
+2024-06-01 03:54:49.272 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-256' coro=<WebSocketHandler._writer() running at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/websocket_api/http.py:138> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> took 0.566 seconds
+2024-06-01 03:54:49.687 INFO (MainThread) [homeassistant.setup] Setting up stream
+2024-06-01 03:54:49.700 INFO (MainThread) [homeassistant.setup] Setup of domain stream took 0.01 seconds
+2024-06-01 03:54:57.953 WARNING (MainThread) [asyncio] Executing <TimerHandle when=267357.422066063 _WatchPendingSetups._async_watch() created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/bootstrap.py:709> took 0.108 seconds
+2024-06-01 03:54:58.973 DEBUG (SyncWorker_13) [custom_components.authenticated.sensor] Users {'1132b42d49324149bf1d745d8614f36d': 'Home Assistant Content', '40fc35b4e82840acb428d021f2c4339d': 'user'}
+2024-06-01 03:54:58.974 DEBUG (SyncWorker_13) [custom_components.authenticated.sensor] Access {'127.0.0.1': {'last_used_at': '2024-06-01T03:49:08.708527+00:00', 'user_id': '40fc35b4e82840acb428d021f2c4339d'}}
+2024-06-01 03:55:12.968 INFO (SyncWorker_5) [homeassistant.util.package] Attempting install of hassil==1.6.1
+2024-06-01 03:55:13.065 INFO (MainThread) [homeassistant.setup] Setting up backup
+2024-06-01 03:55:13.133 INFO (MainThread) [homeassistant.setup] Setup of domain backup took 0.07 seconds
+2024-06-01 03:55:20.830 WARNING (MainThread) [asyncio] Executing <Handle BaseSelectorEventLoop._accept_connection(<aiohttp.web_...x7fe1304d8200>, <socket.socke...0.0.0', 8123)>, None, <Server socke...8123, 0, 0)>)>, 128, None, None) created at /usr/local/lib/python3.12/asyncio/selector_events.py:280> took 0.195 seconds
+2024-06-01 03:55:21.001 WARNING (MainThread) [asyncio] Executing <Handle _SelectorTransport._add_reader(11, <bound method..., bufsize=0>>>) created at /usr/local/lib/python3.12/asyncio/selector_events.py:954> took 0.159 seconds
+2024-06-01 03:55:22.643 WARNING (MainThread) [asyncio] Executing <TimerHandle when=267381.48450649 _WatchPendingSetups._async_watch() created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/bootstrap.py:709> took 0.741 seconds
+2024-06-01 03:55:22.893 WARNING (MainThread) [asyncio] Executing <TimerHandle cancelled when=267381.845511163 _weakref_handle((<weakref at 0...x7fe12862b260>, '_cleanup_closed')) at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/helpers.py:592 created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/helpers.py:612> took 0.249 seconds
+2024-06-01 03:55:24.030 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-327' coro=<BaseSelectorEventLoop._accept_connection2() running at /usr/local/lib/python3.12/asyncio/selector_events.py:235> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> created at /usr/local/lib/python3.12/asyncio/selector_events.py:211> took 0.267 seconds
+2024-06-01 03:55:24.310 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-329' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.167 seconds
+2024-06-01 03:55:24.468 WARNING (MainThread) [asyncio] Executing <Handle RequestHandler.connection_made(<_SelectorSoc...e, bufsize=0>>) created at /usr/local/lib/python3.12/asyncio/selector_events.py:952> took 0.128 seconds
+2024-06-01 03:55:25.677 WARNING (MainThread) [asyncio] Executing <Handle BaseSelectorEventLoop._accept_connection(<aiohttp.web_...x7fe1304d8200>, <socket.socke...0.0.0', 8123)>, None, <Server socke...8123, 0, 0)>)>, 128, None, None) created at /usr/local/lib/python3.12/asyncio/selector_events.py:280> took 0.400 seconds
+2024-06-01 03:55:25.961 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-335' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.157 seconds
+2024-06-01 03:55:27.444 WARNING (MainThread) [asyncio] Executing <TimerHandle cancelled when=267386.399955421 _weakref_handle((<weakref at 0...x7fe13019fd10>, '_cleanup_closed')) at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/helpers.py:592 created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/helpers.py:612> took 0.492 seconds
+2024-06-01 03:55:28.002 WARNING (MainThread) [asyncio] Executing <Handle RequestHandler.connection_made(<_SelectorSoc...e, bufsize=0>>) created at /usr/local/lib/python3.12/asyncio/selector_events.py:952> took 0.174 seconds
+2024-06-01 03:55:28.272 WARNING (MainThread) [asyncio] Executing <Handle BaseSelectorEventLoop._accept_connection(<aiohttp.web_...x7fe1304d8200>, <socket.socke...0.0.0', 8123)>, None, <Server socke...8123, 0, 0)>)>, 128, None, None) created at /usr/local/lib/python3.12/asyncio/selector_events.py:280> took 0.172 seconds
+2024-06-01 03:55:28.455 WARNING (MainThread) [asyncio] Executing <Handle cancelled _UnixSelectorEventLoop._sock_sendfile_native_impl(<Future pendi...events.py:449>, 11, <socket.socke....0.1', 47508)>, 14, 18582, 18582, 18582, 18582) created at /usr/local/lib/python3.12/asyncio/selector_events.py:317> took 0.182 seconds
+2024-06-01 03:55:28.641 WARNING (MainThread) [asyncio] Executing <Handle _chain_future.<locals>._set_state(<Future finis...events.py:449>, <Future at 0x...rned NoneType>) at /usr/local/lib/python3.12/asyncio/futures.py:381 created at /usr/local/lib/python3.12/asyncio/futures.py:403> took 0.175 seconds
+2024-06-01 03:55:29.794 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-350' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:452> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.343 seconds
+2024-06-01 03:55:30.296 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-351' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.465 seconds
+2024-06-01 03:55:30.820 WARNING (MainThread) [asyncio] Executing <Handle _SelectorSocketTransport._call_connection_lost(None) created at /usr/local/lib/python3.12/asyncio/selector_events.py:875> took 0.386 seconds
+2024-06-01 03:55:30.998 WARNING (MainThread) [asyncio] Executing <Handle _SelectorSocketTransport._call_connection_lost(None) created at /usr/local/lib/python3.12/asyncio/selector_events.py:875> took 0.133 seconds
+2024-06-01 03:55:32.013 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-350' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:452> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.233 seconds
+2024-06-01 03:55:33.033 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-381' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.108 seconds
+2024-06-01 03:55:37.935 WARNING (MainThread) [asyncio] Executing <Handle cancelled _UnixSelectorEventLoop._sock_sendfile_native_impl(<Future pendi...events.py:449>, 11, <socket.socke....0.1', 47606)>, 15, 596, 596, 596, 596) created at /usr/local/lib/python3.12/asyncio/selector_events.py:317> took 0.102 seconds
+2024-06-01 03:55:39.576 WARNING (MainThread) [asyncio] Executing <Task finished name='Task-419' coro=<RequestHandler._handle_request() done, defined at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:442> result=(<FileResponse OK eof>, False) created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.119 seconds
+2024-06-01 03:55:43.827 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-444' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:452> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, <1 more>, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.146 seconds
+2024-06-01 03:55:44.720 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-447' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.142 seconds
+2024-06-01 03:55:45.316 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-450' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:452> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.179 seconds
+2024-06-01 03:55:45.990 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-454' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.146 seconds
+2024-06-01 03:55:46.214 WARNING (MainThread) [asyncio] Executing <Handle shield.<locals>._inner_done_callback(<Future finis...events.py:449>) at /usr/local/lib/python3.12/asyncio/tasks.py:905 created at /usr/local/lib/python3.12/asyncio/futures.py:362> took 0.129 seconds
+2024-06-01 03:55:46.899 WARNING (MainThread) [asyncio] Executing <Handle cancelled _UnixSelectorEventLoop._sock_sendfile_native_impl(<Future pendi...events.py:449>, 17, <socket.socke....0.1', 38522)>, 11, 7265, 7265, 7265, 7265) created at /usr/local/lib/python3.12/asyncio/selector_events.py:317> took 0.138 seconds
+2024-06-01 03:55:48.233 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-459' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.104 seconds
+2024-06-01 03:55:50.110 WARNING (MainThread) [asyncio] Executing <Handle _chain_future.<locals>._set_state(<Future finis...events.py:449>, <Future at 0x...ufferedReader>) at /usr/local/lib/python3.12/asyncio/futures.py:381 created at /usr/local/lib/python3.12/asyncio/futures.py:403> took 0.227 seconds
+2024-06-01 03:55:50.900 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-482' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.162 seconds
+2024-06-01 03:55:51.482 WARNING (MainThread) [asyncio] Executing <Handle cancelled _UnixSelectorEventLoop._sock_sendfile_native_impl(<Future pendi...events.py:449>, 15, <socket.socke....0.1', 39834)>, 29, 2436, 2436, 2436, 2436) created at /usr/local/lib/python3.12/asyncio/selector_events.py:317> took 0.118 seconds
+2024-06-01 03:55:52.373 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-488' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.146 seconds
+2024-06-01 03:55:53.240 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-491' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:452> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, <1 more>, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.493 seconds
+2024-06-01 03:55:53.551 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-491' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.127 seconds
+2024-06-01 03:55:54.161 WARNING (MainThread) [asyncio] Executing <Handle _chain_future.<locals>._set_state(<Future finis...events.py:449>, <Future at 0x...ned PosixPath>) at /usr/local/lib/python3.12/asyncio/futures.py:381 created at /usr/local/lib/python3.12/asyncio/futures.py:403> took 0.101 seconds
+2024-06-01 03:55:54.855 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-496' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.136 seconds
+2024-06-01 03:55:58.633 DEBUG (SyncWorker_32) [custom_components.authenticated.sensor] Users {'1132b42d49324149bf1d745d8614f36d': 'Home Assistant Content', '40fc35b4e82840acb428d021f2c4339d': 'user'}
+2024-06-01 03:55:58.633 DEBUG (SyncWorker_32) [custom_components.authenticated.sensor] Access {'127.0.0.1': {'last_used_at': '2024-06-01T03:55:42.678351+00:00', 'user_id': '40fc35b4e82840acb428d021f2c4339d'}}
+2024-06-01 03:55:58.634 INFO (SyncWorker_32) [custom_components.authenticated.sensor] New successful login from known IP (127.0.0.1)
+2024-06-01 03:55:59.608 WARNING (MainThread) [asyncio] Executing <Handle cancelled _UnixSelectorEventLoop._sock_sendfile_native_impl(<Future pendi...events.py:449>, 17, <socket.socke....0.1', 38522)>, 27, 3095, 3095, 3095, 3095) created at /usr/local/lib/python3.12/asyncio/selector_events.py:317> took 0.101 seconds
+2024-06-01 03:56:00.041 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-524' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.104 seconds
+2024-06-01 03:56:02.370 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-535' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.120 seconds
+2024-06-01 03:56:02.867 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-537' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.107 seconds
+2024-06-01 03:56:05.101 WARNING (MainThread) [asyncio] Executing <Handle cancelled _UnixSelectorEventLoop._sock_sendfile_native_impl(<Future pendi...events.py:449>, 17, <socket.socke....0.1', 38522)>, 27, 5309, 5309, 5309, 5309) created at /usr/local/lib/python3.12/asyncio/selector_events.py:317> took 0.239 seconds
+2024-06-01 03:56:06.282 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-549' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.140 seconds
+2024-06-01 03:56:06.811 WARNING (MainThread) [asyncio] Executing <Handle _chain_future.<locals>._set_state(<Future finis...events.py:449>, <Future at 0x...rned NoneType>) at /usr/local/lib/python3.12/asyncio/futures.py:381 created at /usr/local/lib/python3.12/asyncio/futures.py:403> took 0.102 seconds
+2024-06-01 03:56:07.264 WARNING (MainThread) [asyncio] Executing <Task finished name='Task-553' coro=<RequestHandler._handle_request() done, defined at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:442> result=(<FileResponse OK eof>, False) created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.168 seconds
+2024-06-01 03:56:08.896 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-559' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.101 seconds
+2024-06-01 03:56:09.400 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-561' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.117 seconds
+2024-06-01 03:56:09.892 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-562' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.127 seconds
+2024-06-01 03:56:10.978 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-409' coro=<RequestHandler.start() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:531> wait_for=<Task pending name='Task-565' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:442> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:289> took 0.132 seconds
+2024-06-01 03:56:11.256 WARNING (MainThread) [asyncio] Executing <Handle cancelled _UnixSelectorEventLoop._sock_sendfile_native_impl(<Future pendi...events.py:449>, 17, <socket.socke....0.1', 38522)>, 27, 15783, 15783, 15783, 15783) created at /usr/local/lib/python3.12/asyncio/selector_events.py:317> took 0.140 seconds
+2024-06-01 03:56:12.014 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-568' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.132 seconds
+2024-06-01 03:56:12.128 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-568' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.112 seconds
+2024-06-01 03:56:12.825 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-570' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.144 seconds
+2024-06-01 03:56:12.949 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-570' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.117 seconds
+2024-06-01 03:56:13.554 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-572' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.120 seconds
+2024-06-01 03:56:13.748 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-572' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.191 seconds
+2024-06-01 03:56:15.128 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-577' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_UnixSelectorEventLoop._sock_add_cancellation_callback.<locals>.cb() at /usr/local/lib/python3.12/asyncio/unix_events.py:452, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.196 seconds
+2024-06-01 03:56:16.630 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-585' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.161 seconds
+2024-06-01 03:56:17.821 WARNING (MainThread) [asyncio] Executing <Handle _chain_future.<locals>._set_state(<Future finis...events.py:449>, <Future at 0x...rned NoneType>) at /usr/local/lib/python3.12/asyncio/futures.py:381 created at /usr/local/lib/python3.12/asyncio/futures.py:403> took 0.102 seconds
+2024-06-01 03:56:18.517 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-591' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.199 seconds
+2024-06-01 03:56:19.946 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-595' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.118 seconds
+2024-06-01 03:56:20.365 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-596' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.181 seconds
+2024-06-01 03:56:21.976 WARNING (MainThread) [asyncio] Executing <Handle cancelled _UnixSelectorEventLoop._sock_sendfile_native_impl(<Future pendi...events.py:449>, 17, <socket.socke....0.1', 38522)>, 27, 4853, 4853, 4853, 4853) created at /usr/local/lib/python3.12/asyncio/selector_events.py:317> took 0.110 seconds
+2024-06-01 03:56:23.316 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-609' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.200 seconds
+2024-06-01 03:56:26.827 INFO (SyncWorker_5) [homeassistant.util.package] Attempting install of home-assistant-intents==2024.4.24
+2024-06-01 03:56:30.968 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-633' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.149 seconds
+2024-06-01 03:56:31.567 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-638' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:452> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, <1 more>, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.238 seconds
+2024-06-01 03:56:33.440 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-655' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.12/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.124 seconds
+2024-06-01 03:56:45.465 INFO (SyncWorker_7) [homeassistant.util.package] Attempting install of mutagen==1.47.0
+2024-06-01 03:56:45.847 INFO (MainThread) [homeassistant.setup] Setting up conversation
+2024-06-01 03:56:46.037 ERROR (MainThread) [homeassistant.setup] Error during setup of component conversation
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/setup.py", line 404, in _async_setup_component
+    result = await task
+             ^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/conversation/__init__.py", line 193, in async_setup
+    from homeassistant.components.assist_pipeline import (  # pylint: disable=import-outside-toplevel
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/assist_pipeline/__init__.py", line 21, in <module>
+    from .pipeline import (
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/assist_pipeline/pipeline.py", line 24, in <module>
+    from homeassistant.components import (
+  File "/home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/tts/__init__.py", line 22, in <module>
+    import mutagen
+ModuleNotFoundError: No module named 'mutagen'
+2024-06-01 03:56:46.045 INFO (MainThread) [homeassistant.setup] Setup of domain conversation took 0.20 seconds
+2024-06-01 03:56:46.071 WARNING (MainThread) [asyncio] Executing <Task finished name='setup component conversation' coro=<async_setup_component() done, defined at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/setup.py:142> result=False created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> took 0.223 seconds
+2024-06-01 03:56:58.660 DEBUG (SyncWorker_25) [custom_components.authenticated.sensor] Users {'1132b42d49324149bf1d745d8614f36d': 'Home Assistant Content', '40fc35b4e82840acb428d021f2c4339d': 'user'}
+2024-06-01 03:56:58.660 DEBUG (SyncWorker_25) [custom_components.authenticated.sensor] Access {'127.0.0.1': {'last_used_at': '2024-06-01T03:55:42.678351+00:00', 'user_id': '40fc35b4e82840acb428d021f2c4339d'}}
+2024-06-01 03:57:00.781 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-960' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:477> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:922, Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.216 seconds
+2024-06-01 03:57:05.191 INFO (SyncWorker_23) [homeassistant.util.package] Attempting install of PyNaCl==1.5.0
+2024-06-01 03:57:05.457 INFO (MainThread) [homeassistant.setup] Setting up tts
+2024-06-01 03:57:05.469 INFO (SyncWorker_42) [homeassistant.components.tts] Create cache dir /workspaces/authenticated/config/tts
+2024-06-01 03:57:05.693 WARNING (MainThread) [asyncio] Executing <Handle _chain_future.<locals>._set_state(<Future finis...events.py:449>, <Future at 0x...NodeDictClass>) at /usr/local/lib/python3.12/asyncio/futures.py:381 created at /usr/local/lib/python3.12/asyncio/futures.py:403> took 0.161 seconds
+2024-06-01 03:57:05.727 INFO (MainThread) [homeassistant.setup] Setup of domain tts took 0.27 seconds
+2024-06-01 03:57:05.754 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of 'assist_pipeline'. Setup failed for dependencies: ['conversation']
+2024-06-01 03:57:05.755 ERROR (MainThread) [homeassistant.setup] Setup failed for 'assist_pipeline': Could not setup dependencies: conversation
+2024-06-01 03:57:05.881 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-409' coro=<RequestHandler.start() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:531> wait_for=<Task pending name='Task-1005' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:442> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:289> took 0.114 seconds
+2024-06-01 03:57:13.388 INFO (MainThread) [homeassistant.setup] Setting up mobile_app
+2024-06-01 03:57:13.393 INFO (MainThread) [homeassistant.setup] Setting up notify
+2024-06-01 03:57:13.397 INFO (MainThread) [homeassistant.setup] Setup of domain notify took 0.00 seconds
+2024-06-01 03:57:13.401 INFO (MainThread) [homeassistant.setup] Setup of domain mobile_app took 0.01 seconds
+2024-06-01 03:57:13.402 INFO (MainThread) [homeassistant.components.notify] Setting up notify.mobile_app
+2024-06-01 03:57:13.404 ERROR (MainThread) [homeassistant.bootstrap] Error setting up integration default_config - received exception
+asyncio.exceptions.CancelledError
+2024-06-01 03:57:13.449 INFO (MainThread) [homeassistant.bootstrap] Home Assistant initialized in 855.30s
+2024-06-01 03:57:13.452 INFO (MainThread) [homeassistant.core] Starting Home Assistant
+2024-06-01 03:57:13.769 INFO (MainThread) [asyncio] <Server sockets=(<asyncio.TransportSocket fd=15, family=2, type=1, proto=6, laddr=('172.17.0.2', 40000)>,)> is serving
+2024-06-01 03:57:13.906 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-1018' coro=<UpnpServer.async_start() running at /home/vscode/.local/lib/python3.12/site-packages/async_upnp_client/server.py:1326> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[gather.<locals>._done_callback() at /usr/local/lib/python3.12/asyncio/tasks.py:767] created at /usr/local/lib/python3.12/asyncio/tasks.py:695> took 0.109 seconds
+2024-06-01 03:57:14.254 WARNING (MainThread) [asyncio] Executing <Task pending name='ssdp_info_desc_lookup_http://172.17.0.2:40000/device.xml' coro=<Scanner._ssdp_listener_process_callback_with_lookup() running at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/components/ssdp/__init__.py:499> wait_for=<Future pending cb=[BaseSelectorEventLoop._sock_write_done(27, handle=<Handle BaseS...events.py:317>)(), Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[set.remove()] created at /home/vscode/.local/lib/python3.12/site-packages/homeassistant/util/async_.py:40> took 0.333 seconds
+2024-06-01 03:57:44.355 ERROR (MainThread) [homeassistant.components.homeassistant_alerts] Timeout fetching homeassistant_alerts data
+2024-06-01 03:57:58.613 DEBUG (SyncWorker_53) [custom_components.authenticated.sensor] Users {'1132b42d49324149bf1d745d8614f36d': 'Home Assistant Content', '40fc35b4e82840acb428d021f2c4339d': 'user'}
+2024-06-01 03:57:58.614 DEBUG (SyncWorker_53) [custom_components.authenticated.sensor] Access {'127.0.0.1': {'last_used_at': '2024-06-01T03:55:42.678351+00:00', 'user_id': '40fc35b4e82840acb428d021f2c4339d'}}
+2024-06-01 03:58:58.598 DEBUG (SyncWorker_26) [custom_components.authenticated.sensor] Users {'1132b42d49324149bf1d745d8614f36d': 'Home Assistant Content', '40fc35b4e82840acb428d021f2c4339d': 'user'}
+2024-06-01 03:58:58.598 DEBUG (SyncWorker_26) [custom_components.authenticated.sensor] Access {'127.0.0.1': {'last_used_at': '2024-06-01T03:55:42.678351+00:00', 'user_id': '40fc35b4e82840acb428d021f2c4339d'}}
+2024-06-01 03:59:25.557 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-1035' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:452> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.388 seconds
+2024-06-01 03:59:49.316 WARNING (MainThread) [asyncio] Executing <Task pending name='Task-1035' coro=<RequestHandler._handle_request() running at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:452> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/base_events.py:449> cb=[Task.task_wakeup()] created at /home/vscode/.local/lib/python3.12/site-packages/aiohttp/web_protocol.py:527> took 0.163 seconds
+2024-06-01 03:59:58.620 DEBUG (SyncWorker_11) [custom_components.authenticated.sensor] Users {'1132b42d49324149bf1d745d8614f36d': 'Home Assistant Content', '40fc35b4e82840acb428d021f2c4339d': 'user'}
+2024-06-01 03:59:58.620 DEBUG (SyncWorker_11) [custom_components.authenticated.sensor] Access {'127.0.0.1': {'last_used_at': '2024-06-01T03:59:23.656776+00:00', 'user_id': '40fc35b4e82840acb428d021f2c4339d'}}
+2024-06-01 03:59:58.621 INFO (SyncWorker_11) [custom_components.authenticated.sensor] New successful login from known IP (127.0.0.1)
+2024-06-01 04:00:58.672 DEBUG (SyncWorker_22) [custom_components.authenticated.sensor] Users {'1132b42d49324149bf1d745d8614f36d': 'Home Assistant Content', '40fc35b4e82840acb428d021f2c4339d': 'user'}
+2024-06-01 04:00:58.672 DEBUG (SyncWorker_22) [custom_components.authenticated.sensor] Access {'127.0.0.1': {'last_used_at': '2024-06-01T03:55:42.678351+00:00', 'user_id': '40fc35b4e82840acb428d021f2c4339d'}}
+2024-06-01 04:01:58.627 DEBUG (SyncWorker_39) [custom_components.authenticated.sensor] Users {'1132b42d49324149bf1d745d8614f36d': 'Home Assistant Content', '40fc35b4e82840acb428d021f2c4339d': 'user'}
+2024-06-01 04:01:58.627 DEBUG (SyncWorker_39) [custom_components.authenticated.sensor] Access {'127.0.0.1': {'last_used_at': '2024-06-01T03:55:42.678351+00:00', 'user_id': '40fc35b4e82840acb428d021f2c4339d'}}
+2024-06-01 04:02:58.627 DEBUG (SyncWorker_55) [custom_components.authenticated.sensor] Users {'1132b42d49324149bf1d745d8614f36d': 'Home Assistant Content', '40fc35b4e82840acb428d021f2c4339d': 'user'}
+2024-06-01 04:02:58.627 DEBUG (SyncWorker_55) [custom_components.authenticated.sensor] Access {'127.0.0.1': {'last_used_at': '2024-06-01T03:55:42.678351+00:00', 'user_id': '40fc35b4e82840acb428d021f2c4339d'}}
