@@ -1,5 +1,4 @@
 {
-    "domain": "authenticated",
     "name": "Authenticated",
     "filename": "authenticated.zip",
     "hide_default_branch": true,
