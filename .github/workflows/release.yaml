@@ -25,21 +25,21 @@ jobs:
         id: information
         run: |
           name=$(find custom_components/ -type d -maxdepth 1 | tail -n 1 | cut -d "/" -f2)
-          echo "::set-output name=name::$name"
+          echo "component_name=$name" >> "$GITHUB_ENV"
 
       - name: 🔢 Adjust version number
         shell: "bash"
         run: |
           yq -i -o json '.version="${{ github.event.release.tag_name }}"' \
-            "${{ github.workspace }}/custom_components/${{ steps.information.outputs.name }}/manifest.json"
+            "${{ github.workspace }}/custom_components/$component_name/manifest.json"
 
       - name: 📦 ZIP the integration directory
         shell: "bash"
         run: |
-          cd "${{ github.workspace }}/custom_components/${{ steps.information.outputs.name }}"
-          zip ${{ steps.information.outputs.name }}.zip -r ./
+          cd "${{ github.workspace }}/custom_components/$component_name"
+          zip $component_name.zip -r ./
 
       - name: 📤 Upload the ZIP file to the release
         uses: softprops/action-gh-release@v0.1.15
         with:
-          files: ${{ github.workspace }}/custom_components/${{ steps.information.outputs.name }}/${{ steps.information.outputs.name }}.zip
+          files: ${{ github.workspace }}/custom_components/$component_name/${{ steps.information.outputs.name }}.zip
