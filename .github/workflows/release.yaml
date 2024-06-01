@@ -1,21 +1,21 @@
-# This GitHub action workflow is meant to be copyable to any repo that have the same structure.
-# - Your integration exist under custom_components/{INTEGRATION_NAME}/[integration files]
-# - You are using GitHub releases to publish new versions
-# - You have a INTEGRATION_VERSION constant in custom_components/{INTEGRATION_NAME}/const.py
-
-name: Release Workflow
+name: "Release"
 
 on:
   release:
-    types: [published]
+    types:
+      - "published"
+
+permissions: {}
 
 jobs:
   release:
-    name: Release
-    runs-on: ubuntu-latest
+    name: "Release"
+    runs-on: "ubuntu-latest"
+    permissions:
+      contents: write
     steps:
       - name: 📥 Checkout the repository
-        uses: actions/checkout@v2
+        uses: "actions/checkout@v4.1.0"
 
       - name: 🔢 Get release version
         id: version
@@ -26,40 +26,20 @@ jobs:
         run: |
           name=$(find custom_components/ -type d -maxdepth 1 | tail -n 1 | cut -d "/" -f2)
           echo "::set-output name=name::$name"
-      
-      - name: 🖊️ Set version number
+
+      - name: 🔢 Adjust version number
+        shell: "bash"
         run: |
-          sed -i '/INTEGRATION_VERSION = /c\INTEGRATION_VERSION = "${{ steps.version.outputs.version }}"' \
-            "${{ github.workspace }}/custom_components/${{ steps.information.outputs.name }}/const.py"
-          jq '.version = "${{ steps.version.outputs.version }}"' \
-            "${{ github.workspace }}/custom_components/${{ steps.information.outputs.name }}/manifest.json" > tmp \
-            && mv -f tmp "${{ github.workspace }}/custom_components/${{ steps.information.outputs.name }}/manifest.json"
-      
-      - name: 👀 Validate data
-        run: |
-          if ! grep -q 'INTEGRATION_VERSION = "${{ steps.version.outputs.version }}"' ${{ github.workspace }}/custom_components/${{ steps.information.outputs.name }}/const.py; then
-            echo "The version in custom_components/${{ steps.information.outputs.name }}/const.py was not correct"
-            cat ${{ github.workspace }}/custom_components/${{ steps.information.outputs.name }}/const.py | grep INTEGRATION_VERSION
-            exit 1
-          fi
-          manifestversion=$(jq -r '.version' ${{ github.workspace }}/custom_components/${{ steps.information.outputs.name }}/manifest.json)
-          if [ "$manifestversion" != "${{ steps.version.outputs.version }}" ]; then
-            echo "The version in custom_components/${{ steps.information.outputs.name }}/manifest.json was not correct"
-            echo "$manifestversion"
-            exit 1
-          fi
-      
-      - name: 📦 Create zip file for the integration
+          yq -i -o json '.version="${{ github.event.release.tag_name }}"' \
+            "${{ github.workspace }}/custom_components/${{ steps.information.outputs.name }}/manifest.json"
+
+      - name: 📦 ZIP the integration directory
+        shell: "bash"
         run: |
           cd "${{ github.workspace }}/custom_components/${{ steps.information.outputs.name }}"
           zip ${{ steps.information.outputs.name }}.zip -r ./
-      
-      - name: 📤 Upload the zip file as a release asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 📤 Upload the ZIP file to the release
+        uses: softprops/action-gh-release@v0.1.15
         with:
-          upload_url: ${{ github.event.release.upload_url }}
-          asset_path: "${{ github.workspace }}/custom_components/${{ steps.information.outputs.name }}/${{ steps.information.outputs.name }}.zip"
-          asset_name: ${{ steps.information.outputs.name }}.zip
-          asset_content_type: application/zip
+          files: ${{ github.workspace }}/custom_components/${{ steps.information.outputs.name }}/${{ steps.information.outputs.name }}.zip
