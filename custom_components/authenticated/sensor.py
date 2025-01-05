@@ -45,7 +45,7 @@ PLATFORM_NAME = "authenticated"
 PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend(
     {
         vol.Optional(CONF_PROVIDER, default="ipapi"): vol.In(
-            ["ipapi", "extreme", "ipvigilante"]
+            ["ipapi"]
         ),
         vol.Optional(CONF_LOG_LOCATION, default=""): cv.string,
         vol.Optional(CONF_NOTIFY, default=True): cv.boolean,
