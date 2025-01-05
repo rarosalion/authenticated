@@ -41,12 +41,12 @@ class GeoProvider:
 
     @property
     def asn(self):
-        """ Return ASN or None."""
+        """Return ASN or None."""
         return self.result.get("asn")
 
     @property
     def org(self):
-        """ Return organisation name or None."""
+        """Return organisation name or None."""
         return self.result.get("org")
 
     @property
@@ -125,13 +125,13 @@ class IPInfo(GeoProvider):
 
     @property
     def asn(self):
-        """ Return ASN or None."""
+        """Return ASN or None."""
         org = self.result.get("org")
         return org.split(" ", 1)[0] if org else None
 
     @property
     def org(self):
-        """ Return organisation name or None."""
+        """Return organisation name or None."""
         org = self.result.get("org")
         _LOGGER.debug(f"ORG: {org}")
         return org.split(" ", 1)[1] if org else None

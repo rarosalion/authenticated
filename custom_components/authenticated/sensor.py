@@ -432,10 +432,10 @@ class IPData:
     def notify(self, hass):
         """Create persistant notification."""
         notify = hass.components.persistent_notification.create
-        message = """
-        **IP Address:**   {}
-        **Username:**    {}
-        """.format(self.ip_address, self.username)
+        message = f"""
+        **IP Address:**   {self.ip_address}
+        **Username:**    {self.username}
+        """
 
         for notify_val, notify_str in [
             (self.country, "Country"),
