@@ -34,6 +34,8 @@ ATTR_HOSTNAME = "hostname"
 ATTR_COUNTRY = "country"
 ATTR_REGION = "region"
 ATTR_CITY = "city"
+ATTR_ASN = "asn"
+ATTR_ORG = "org"
 ATTR_NEW_IP = "new_ip"
 ATTR_LAST_AUTHENTICATE_TIME = "last_authenticated_time"
 ATTR_PREVIOUS_AUTHENTICATE_TIME = "previous_authenticated_time"
@@ -44,9 +46,7 @@ SCAN_INTERVAL = timedelta(minutes=1)
 PLATFORM_NAME = "authenticated"
 PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend(
     {
-        vol.Optional(CONF_PROVIDER, default="ipapi"): vol.In(
-            ["ipapi"]
-        ),
+        vol.Optional(CONF_PROVIDER, default="ipapi"): vol.In(list(PROVIDERS.keys())),
         vol.Optional(CONF_LOG_LOCATION, default=""): cv.string,
         vol.Optional(CONF_NOTIFY, default=True): cv.boolean,
         vol.Optional(CONF_EXCLUDE, default=[]): vol.All(cv.ensure_list, [cv.string]),
@@ -143,6 +143,12 @@ class AuthenticatedSensor(Entity):
                 if store.city is not None:
                     accessdata.city = store.city
 
+                if store.asn is not None:
+                    accessdata.asn = store.asn
+
+                if store.org is not None:
+                    accessdata.org = store.org
+
                 if store.last_access is not None:
                     accessdata.last_access = store.last_access
                 elif store.attributes.get("last_authenticated") is not None:
@@ -211,6 +217,7 @@ class AuthenticatedSensor(Entity):
                 ipaddress.hostname = get_hostname(ipaddress.ip_address)
 
             if ipaddress.new_ip:
+                # TODO: Optionally exclude ASNs/Orgs/IP ranges from notifications
                 if self.notify:
                     ipaddress.notify(self.hass)
                 ipaddress.new_ip = False
@@ -252,6 +259,8 @@ class AuthenticatedSensor(Entity):
             ATTR_COUNTRY: self.last_ip.country,
             ATTR_REGION: self.last_ip.region,
             ATTR_CITY: self.last_ip.city,
+            ATTR_ASN: self.last_ip.asn,
+            ATTR_ORG: self.last_ip.org,
             ATTR_USER: self.last_ip.username,
             ATTR_NEW_IP: self.last_ip.new_ip,
             ATTR_LAST_AUTHENTICATE_TIME: self.last_ip.last_used_at,
@@ -276,6 +285,8 @@ class AuthenticatedSensor(Entity):
                 "hostname": known.hostname,
                 "region": known.region,
                 "city": known.city,
+                "asn": known.asn,
+                "org": known.org
             }
         with open(self.out, "w") as out_file:
             yaml.dump(info, out_file, default_flow_style=False,
@@ -374,6 +385,8 @@ class AuthenticatedData:
         self.country = attributes.get("country")
         self.region = attributes.get("region")
         self.city = attributes.get("city")
+        self.asn = attributes.get("asn")
+        self.org = attributes.get("org")
         self.user_id = attributes.get("user_id")
         self.hostname = attributes.get("hostname")
 
@@ -393,6 +406,8 @@ class IPData:
         self.city = access_data.city
         self.region = access_data.region
         self.country = access_data.country
+        self.asn = access_data.asn
+        self.org = access_data.org
         self.new_ip = new
 
     @property
@@ -411,46 +426,31 @@ class IPData:
             self.country = geo.get("data", {}).get("country")
             self.region = geo.get("data", {}).get("region")
             self.city = geo.get("data", {}).get("city")
+            self.asn = geo.get("data", {}).get("asn")
+            self.org = geo.get("data", {}).get("org")
 
     def notify(self, hass):
         """Create persistant notification."""
         notify = hass.components.persistent_notification.create
-        if self.country is not None:
-            country = f"**Country:**   {self.country}"
-        else:
-            country = ""
-        if self.hostname is not None:
-            hostname = f"**Hostname:**   {self.hostname}"
-        else:
-            hostname = ""
-        if self.region is not None:
-            region = f"**Region:**   {self.region}"
-        else:
-            region = ""
-        if self.city is not None:
-            city = f"**City:**   {self.city}"
-        else:
-            city = ""
-        if self.last_used_at is not None:
-            last_used_at = f"**Login time:**   {self.last_used_at[:19]}"
-        else:
-            last_used_at = ""
         message = """
         **IP Address:**   {}
         **Username:**    {}
-        {}
-        {}
-        {}
-        {}
-        {}
-        """.format(
-            self.ip_address,
-            self.username,
-            country,
-            hostname,
-            region,
-            city,
-            last_used_at.replace("T", " "),
-        )
+        """.format(self.ip_address, self.username)
+
+        for notify_val, notify_str in [
+            (self.country, "Country"),
+            (self.hostname, "Hostname"),
+            (self.region, "Region"),
+            (self.city, "City"),
+            (self.asn, "ASN"),
+            (self.org, "Organisation")
+        ]:
+            if notify_val is not None:
+                message += f"**{notify_str}:**  {notify_val}\n"
+
+        if self.last_used_at is not None:
+            message += f"**Login time:**   {
+                self.last_used_at[:19].replace('T', ' ')}"
+
         notify(message, title="New successful login",
                notification_id=self.ip_address)

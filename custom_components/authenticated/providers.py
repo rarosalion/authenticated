@@ -40,10 +40,26 @@ class GeoProvider:
         return self.result.get("city")
 
     @property
+    def asn(self):
+        """ Return ASN or None."""
+        return self.result.get("asn")
+
+    @property
+    def org(self):
+        """ Return organisation name or None."""
+        return self.result.get("org")
+
+    @property
     def computed_result(self):
         """Return the computed result."""
         if self.result is not None:
-            return {"country": self.country, "region": self.region, "city": self.city}
+            return {
+                "country": self.country,
+                "region": self.region,
+                "city": self.city,
+                "asn": self.asn,
+                "org": self.org
+            }
         return None
 
     def update_geo_info(self):
@@ -53,6 +69,8 @@ class GeoProvider:
             api = self.url.format(self.ipaddr)
             header = {"user-agent": "Home Assistant/Python"}
             data = requests.get(api, headers=header, timeout=5).json()
+
+            _LOGGER.debug(data)
 
             if data.get("error"):
                 if data.get("reason") == "RateLimited":
@@ -99,35 +117,21 @@ class IPApi(GeoProvider):
 
 
 @register_provider
-class ExtremeIPLookup(GeoProvider):
-    """IPApi class."""
+class IPInfo(GeoProvider):
+    """IPInfo class."""
 
-    url = "https://extreme-ip-lookup.com/json/{}"
-    name = "extreme"
-
-
-@register_provider
-class IPVigilante(GeoProvider):
-    """IPVigilante class."""
-
-    url = "https://ipvigilante.com/json/{}"
-    name = "ipvigilante"
-
-    def parse_data(self):
-        """Parse data from geoprovider."""
-        self.result = self.result.get("data", {})
+    url = "https://ipinfo.io/{}/json"
+    name = "ipinfo"
 
     @property
-    def country(self):
-        """Return country name or None."""
-        return self.result.get("country_name")
+    def asn(self):
+        """ Return ASN or None."""
+        org = self.result.get("org")
+        return org.split(" ", 1)[0] if org else None
 
     @property
-    def region(self):
-        """Return region name or None."""
-        return self.result.get("subdivision_1_name")
-
-    @property
-    def city(self):
-        """Return city name or None."""
-        return self.result.get("city_name")
+    def org(self):
+        """ Return organisation name or None."""
+        org = self.result.get("org")
+        _LOGGER.debug(f"ORG: {org}")
+        return org.split(" ", 1)[1] if org else None
