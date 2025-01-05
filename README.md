@@ -20,6 +20,10 @@ For general info about securing your instance:
 * Initial fork of [custom-components/authenticated](https://github.com/custom-components/authenticated) by @ludeeus.
 * Updated development environment for 2024.5.5 including Python 3.12
 
+## v0.02
+
+* Updated for Python 3.13
+* Included ASN and Organisational name output
 
 # Old Readme (may or may not be accurate)
 
