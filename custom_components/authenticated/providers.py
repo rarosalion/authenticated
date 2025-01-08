@@ -1,4 +1,5 @@
 """Providers."""
+
 import logging
 
 import requests
@@ -60,7 +61,7 @@ class GeoProvider:
                 "region": self.region,
                 "city": self.city,
                 "asn": self.asn,
-                "org": self.org
+                "org": self.org,
             }
         return None
 

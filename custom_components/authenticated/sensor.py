@@ -3,6 +3,7 @@
 For more details about this component, please refer to the documentation at
 https://github.com/custom-components/authenticated
 """
+
 import json
 import logging
 import os
@@ -51,7 +52,9 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend(
         vol.Optional(CONF_PROVIDER, default="ipapi"): vol.In(list(PROVIDERS.keys())),
         vol.Optional(CONF_LOG_LOCATION, default=""): cv.string,
         vol.Optional(CONF_NOTIFY, default=True): cv.boolean,
-        vol.Optional(CONF_NOTIFY_ECLUDE_ASN, default=[]): vol.All(cv.ensure_list, [cv.string]),
+        vol.Optional(CONF_NOTIFY_ECLUDE_ASN, default=[]): vol.All(
+            cv.ensure_list, [cv.string]
+        ),
         vol.Optional(CONF_EXCLUDE, default=[]): vol.All(cv.ensure_list, [cv.string]),
         vol.Optional(CONF_EXCLUDE_CLIENTS, default=[]): vol.All(
             cv.ensure_list, [cv.string]
@@ -84,7 +87,13 @@ def setup_platform(hass, config, add_devices, discovery_info=None):
     out = str(hass.config.path(OUTFILE))
 
     sensor = AuthenticatedSensor(
-        hass, notify, out, exclude, exclude_clients, notify_exclude_asn, config[CONF_PROVIDER]
+        hass,
+        notify,
+        out,
+        exclude,
+        exclude_clients,
+        notify_exclude_asn,
+        config[CONF_PROVIDER],
     )
     sensor.initial_run()
 
@@ -94,7 +103,9 @@ def setup_platform(hass, config, add_devices, discovery_info=None):
 class AuthenticatedSensor(Entity):
     """Representation of a Sensor."""
 
-    def __init__(self, hass, notify, out, exclude, exclude_clients, notify_exclude_asn, provider):
+    def __init__(
+        self, hass, notify, out, exclude, exclude_clients, notify_exclude_asn, provider
+    ):
         """Initialize the sensor."""
         self.hass = hass
         self._state = None
@@ -110,8 +121,7 @@ class AuthenticatedSensor(Entity):
     def initial_run(self):
         """Run this at startup to initialize the platform data."""
         users, tokens = load_authentications(
-            self.hass.config.path(
-                ".storage/auth"), self.exclude, self.exclude_clients
+            self.hass.config.path(".storage/auth"), self.exclude, self.exclude_clients
         )
 
         if os.path.isfile(self.out):
@@ -120,7 +130,6 @@ class AuthenticatedSensor(Entity):
             _LOGGER.debug("File has not been created, no data pressent.")
 
         for access in tokens:
-
             try:
                 ValidateIP(access)
             except ValueError:
@@ -129,8 +138,7 @@ class AuthenticatedSensor(Entity):
             accessdata = AuthenticatedData(access, tokens[access])
 
             if accessdata.ipaddr in self.stored:
-                store = AuthenticatedData(
-                    accessdata.ipaddr, self.stored[access])
+                store = AuthenticatedData(accessdata.ipaddr, self.stored[access])
                 accessdata.ipaddr = access
 
                 if store.user_id is not None:
@@ -180,8 +188,7 @@ class AuthenticatedSensor(Entity):
         """Update sensor value."""
         updated = False
         users, tokens = load_authentications(
-            self.hass.config.path(
-                ".storage/auth"), self.exclude, self.exclude_clients
+            self.hass.config.path(".storage/auth"), self.exclude, self.exclude_clients
         )
         _LOGGER.debug("Users %s", users)
         _LOGGER.debug("Access %s", tokens)
@@ -204,16 +211,14 @@ class AuthenticatedSensor(Entity):
                         continue
                     if new > stored:
                         updated = True
-                        _LOGGER.info(
-                            "New successful login from known IP (%s)", access)
+                        _LOGGER.info("New successful login from known IP (%s)", access)
                         ipaddress.prev_used_at = ipaddress.last_used_at
                         ipaddress.last_used_at = tokens[access]["last_used_at"]
                 except Exception:  # pylint: disable=broad-except
                     pass
             else:
                 updated = True
-                _LOGGER.warning(
-                    "New successful login from unknown IP (%s)", access)
+                _LOGGER.warning("New successful login from unknown IP (%s)", access)
                 accessdata = AuthenticatedData(access, tokens[access])
                 ipaddress = IPData(accessdata, users, self.provider)
                 ipaddress.lookup()
@@ -292,11 +297,10 @@ class AuthenticatedSensor(Entity):
                 "region": known.region,
                 "city": known.city,
                 "asn": known.asn,
-                "org": known.org
+                "org": known.org,
             }
         with open(self.out, "w") as out_file:
-            yaml.dump(info, out_file, default_flow_style=False,
-                      explicit_start=True)
+            yaml.dump(info, out_file, default_flow_style=False, explicit_start=True)
 
 
 def get_outfile_content(file):
@@ -364,15 +368,13 @@ def load_authentications(authfile, exclude, exclude_clients):
                     tokens_cleaned[token["last_used_ip"]]["last_used_at"] = token[
                         "last_used_at"
                     ]
-                    tokens_cleaned[token["last_used_ip"]
-                                   ]["user_id"] = token["user_id"]
+                    tokens_cleaned[token["last_used_ip"]]["user_id"] = token["user_id"]
             else:
                 tokens_cleaned[token["last_used_ip"]] = {}
                 tokens_cleaned[token["last_used_ip"]]["last_used_at"] = token[
                     "last_used_at"
                 ]
-                tokens_cleaned[token["last_used_ip"]
-                               ]["user_id"] = token["user_id"]
+                tokens_cleaned[token["last_used_ip"]]["user_id"] = token["user_id"]
         except Exception:  # Gotta Catch 'Em All
             pass
 
@@ -449,7 +451,7 @@ class IPData:
             (self.region, "Region"),
             (self.city, "City"),
             (self.asn, "ASN"),
-            (self.org, "Organisation")
+            (self.org, "Organisation"),
         ]:
             if notify_val is not None:
                 message += f"**{notify_str}:**  {notify_val}\n"
@@ -458,5 +460,4 @@ class IPData:
             message += f"**Login time:**   {
                 self.last_used_at[:19].replace('T', ' ')}"
 
-        notify(message, title="New successful login",
-               notification_id=self.ip_address)
+        notify(message, title="New successful login", notification_id=self.ip_address)
