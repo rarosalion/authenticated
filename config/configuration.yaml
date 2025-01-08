@@ -1,9 +1,17 @@
+# https://www.home-assistant.io/integrations/default_config/
 default_config:
+
+# https://www.home-assistant.io/integrations/logger/
 logger:
   default: info
   logs:
     custom_components.authenticated: debug
 
+# https://www.home-assistant.io/integrations/homeassistant/
+homeassistant:
+  debug: true
 
+
+# Enable this component
 sensor:
   - platform: authenticated

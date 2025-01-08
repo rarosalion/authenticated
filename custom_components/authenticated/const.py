@@ -16,6 +16,7 @@ https://github.com/custom-components/authenticated/issues
 
 
 CONF_NOTIFY = "enable_notification"
+CONF_NOTIFY_ECLUDE_ASN = "notify_exclude_asns"
 CONF_EXCLUDE = "exclude"
 CONF_EXCLUDE_CLIENTS = "exclude_clients"
 CONF_PROVIDER = "provider"

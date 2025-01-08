@@ -43,6 +43,7 @@ sensor:
 | **exclude**             | no       |         | A list of IP addresses you want to exclude.                                              |
 | **provider**            | no       | 'ipapi' | The provider you want to use for GEO Lookup, 'ipapi', 'extreme', 'ipvigilante'.          |
 | **log_location**        | no       |         | Full path to the logfile.                                                                |
+| **notify_exclude_asns** | no       | []      | A list of ASNs that will be excluded from notifications. Note they will still be logged as normal, and this setting has no effect if `enable_notification` is set to `false`.
 
 **Sample overview:**\
 ![Sample overview](/img/overview.png)

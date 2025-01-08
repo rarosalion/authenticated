@@ -21,6 +21,7 @@ from .providers import PROVIDERS
 from .const import (
     OUTFILE,
     CONF_NOTIFY,
+    CONF_NOTIFY_ECLUDE_ASN,
     CONF_EXCLUDE,
     CONF_EXCLUDE_CLIENTS,
     CONF_PROVIDER,
@@ -49,6 +50,7 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend(
         vol.Optional(CONF_PROVIDER, default="ipapi"): vol.In(list(PROVIDERS.keys())),
         vol.Optional(CONF_LOG_LOCATION, default=""): cv.string,
         vol.Optional(CONF_NOTIFY, default=True): cv.boolean,
+        vol.Optional(CONF_NOTIFY_ECLUDE_ASN, default=[]): vol.All(cv.ensure_list, [cv.string]),
         vol.Optional(CONF_EXCLUDE, default=[]): vol.All(cv.ensure_list, [cv.string]),
         vol.Optional(CONF_EXCLUDE_CLIENTS, default=[]): vol.All(
             cv.ensure_list, [cv.string]
@@ -68,6 +70,7 @@ def setup_platform(hass, config, add_devices, discovery_info=None):
 
     """ Create the sensor. """
     notify = config.get(CONF_NOTIFY)
+    notify_exclude_asn = config.get(CONF_NOTIFY_ECLUDE_ASN)
     exclude = config.get(CONF_EXCLUDE)
     exclude_clients = config.get(CONF_EXCLUDE_CLIENTS)
     hass.data[PLATFORM_NAME] = {}
@@ -80,7 +83,7 @@ def setup_platform(hass, config, add_devices, discovery_info=None):
     out = str(hass.config.path(OUTFILE))
 
     sensor = AuthenticatedSensor(
-        hass, notify, out, exclude, exclude_clients, config[CONF_PROVIDER]
+        hass, notify, out, exclude, exclude_clients, notify_exclude_asn, config[CONF_PROVIDER]
     )
     sensor.initial_run()
 
@@ -90,7 +93,7 @@ def setup_platform(hass, config, add_devices, discovery_info=None):
 class AuthenticatedSensor(Entity):
     """Representation of a Sensor."""
 
-    def __init__(self, hass, notify, out, exclude, exclude_clients, provider):
+    def __init__(self, hass, notify, out, exclude, exclude_clients, notify_exclude_asn, provider):
         """Initialize the sensor."""
         self.hass = hass
         self._state = None
@@ -100,6 +103,7 @@ class AuthenticatedSensor(Entity):
         self.exclude = exclude
         self.exclude_clients = exclude_clients
         self.notify = notify
+        self.notify_exclude_asn = notify_exclude_asn
         self.out = out
 
     def initial_run(self):
@@ -217,9 +221,10 @@ class AuthenticatedSensor(Entity):
                 ipaddress.hostname = get_hostname(ipaddress.ip_address)
 
             if ipaddress.new_ip:
-                # TODO: Optionally exclude ASNs/Orgs/IP ranges from notifications
                 if self.notify:
-                    ipaddress.notify(self.hass)
+                    # Optionally exclude ASNs/Orgs/IP ranges from notifications
+                    if ipaddress.asn not in self.notify_exclude_asn:
+                        ipaddress.notify(self.hass)
                 ipaddress.new_ip = False
 
             self.hass.data[PLATFORM_NAME][access] = ipaddress

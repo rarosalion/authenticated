@@ -5,9 +5,7 @@ set -e
 cd "$(dirname "$0")/.."
 
 python3 -m pip install --requirement requirements.txt
-
 echo
 echo
-echo "Setup complete. Run 'develop' to start homeassistant server"
-
-# ./scripts/develop
+echo "Setup complete. Run './scripts/develop' to start homeassistant server"
+echo
