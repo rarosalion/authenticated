@@ -1,8 +1,5 @@
 {
     "name": "Authenticated",
     "filename": "authenticated.zip",
-    "homeassistant": "2025.1.0",
-    "hacs": "2.0.1",
-    "hide_default_branch": true,
     "zip_release": true
 }
