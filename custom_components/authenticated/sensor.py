@@ -1,5 +1,4 @@
-"""
-A platform to get successful login information from Home Assistant.
+"""A platform to get successful login information from Home Assistant.
 
 For more details about this component, please refer to the documentation at
 https://github.com/custom-components/authenticated
