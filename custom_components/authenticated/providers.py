@@ -1,6 +1,8 @@
 """Providers."""
 import logging
+
 import requests
+
 from . import AuthenticatedBaseException
 
 _LOGGER = logging.getLogger(__name__)
@@ -78,10 +80,7 @@ class GeoProvider:
                         "RatelimitError, try a different provider."
                     )
 
-            elif data.get("status", "success") == "error":
-                return
-
-            elif data.get("reserved"):
+            elif data.get("status", "success") == "error" or data.get("reserved"):
                 return
 
             elif data.get("status", "success") == "fail":

@@ -1,33 +1,35 @@
-"""A platform to get successful login information from Home Assistant.
+"""
+A platform to get successful login information from Home Assistant.
 
 For more details about this component, please refer to the documentation at
 https://github.com/custom-components/authenticated
 """
-from datetime import datetime, timedelta
 import json
 import logging
 import os
-from ipaddress import ip_address as ValidateIP, ip_network
 import socket
-import voluptuous as vol
-import yaml
 from contextlib import suppress
+from datetime import datetime, timedelta
+from ipaddress import ip_address as ValidateIP
+from ipaddress import ip_network
 
 import homeassistant.helpers.config_validation as cv
+import voluptuous as vol
+import yaml
 from homeassistant.components.sensor import PLATFORM_SCHEMA
 from homeassistant.helpers.entity import Entity
 
-from .providers import PROVIDERS
 from .const import (
-    OUTFILE,
-    CONF_NOTIFY,
-    CONF_NOTIFY_ECLUDE_ASN,
     CONF_EXCLUDE,
     CONF_EXCLUDE_CLIENTS,
-    CONF_PROVIDER,
     CONF_LOG_LOCATION,
+    CONF_NOTIFY,
+    CONF_NOTIFY_ECLUDE_ASN,
+    CONF_PROVIDER,
+    OUTFILE,
     STARTUP,
 )
+from .providers import PROVIDERS
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -201,7 +203,7 @@ class AuthenticatedSensor(Entity):
                         continue
                     if new is None or stored is None:
                         continue
-                    elif new > stored:
+                    if new > stored:
                         updated = True
                         _LOGGER.info(
                             "New successful login from known IP (%s)", access)
@@ -420,7 +422,7 @@ class IPData:
         """Return the username used for the login."""
         if self.user_id is None:
             return "Unknown"
-        elif self.user_id in self.all_users:
+        if self.user_id in self.all_users:
             return self.all_users[self.user_id]
         return "Unknown"
 
