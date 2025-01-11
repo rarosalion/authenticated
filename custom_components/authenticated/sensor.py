@@ -25,6 +25,7 @@ from .const import (
     CONF_LOG_LOCATION,
     CONF_NOTIFY,
     CONF_NOTIFY_ECLUDE_ASN,
+    CONF_NOTIFY_ECLUDE_HOSTNAMES,
     CONF_PROVIDER,
     OUTFILE,
     STARTUP,
@@ -55,6 +56,9 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend(
         vol.Optional(CONF_NOTIFY_ECLUDE_ASN, default=[]): vol.All(
             cv.ensure_list, [cv.string]
         ),
+        vol.Optional(CONF_NOTIFY_ECLUDE_HOSTNAMES, default=[]): vol.All(
+            cv.ensure_list, [cv.string]
+        ),
         vol.Optional(CONF_EXCLUDE, default=[]): vol.All(cv.ensure_list, [cv.string]),
         vol.Optional(CONF_EXCLUDE_CLIENTS, default=[]): vol.All(
             cv.ensure_list, [cv.string]
@@ -75,6 +79,7 @@ def setup_platform(hass, config, add_devices, discovery_info=None):
     """ Create the sensor. """
     notify = config.get(CONF_NOTIFY)
     notify_exclude_asn = config.get(CONF_NOTIFY_ECLUDE_ASN)
+    notify_exclude_hostnames = config.get(CONF_NOTIFY_ECLUDE_HOSTNAMES)
     exclude = config.get(CONF_EXCLUDE)
     exclude_clients = config.get(CONF_EXCLUDE_CLIENTS)
     hass.data[PLATFORM_NAME] = {}
@@ -93,6 +98,7 @@ def setup_platform(hass, config, add_devices, discovery_info=None):
         exclude,
         exclude_clients,
         notify_exclude_asn,
+        notify_exclude_hostnames,
         config[CONF_PROVIDER],
     )
     sensor.initial_run()
@@ -104,7 +110,15 @@ class AuthenticatedSensor(Entity):
     """Representation of a Sensor."""
 
     def __init__(
-        self, hass, notify, out, exclude, exclude_clients, notify_exclude_asn, provider
+        self,
+        hass,
+        notify,
+        out,
+        exclude,
+        exclude_clients,
+        notify_exclude_asn,
+        notify_exclude_hostnames,
+        provider,
     ):
         """Initialize the sensor."""
         self.hass = hass
@@ -116,6 +130,7 @@ class AuthenticatedSensor(Entity):
         self.exclude_clients = exclude_clients
         self.notify = notify
         self.notify_exclude_asn = notify_exclude_asn
+        self.notify_exclude_hostnames = notify_exclude_hostnames
         self.out = out
 
     def initial_run(self):
@@ -228,8 +243,13 @@ class AuthenticatedSensor(Entity):
 
             if ipaddress.new_ip:
                 if self.notify:
-                    # Optionally exclude ASNs/Orgs/IP ranges from notifications
-                    if ipaddress.asn not in self.notify_exclude_asn:
+                    if ipaddress.asn in self.notify_exclude_asn:
+                        # ASN is in exclude list
+                        pass
+                    elif ipaddress.hostname in self.notify_exclude_hostnames:
+                        # Host name is in exclude list
+                        pass
+                    else:
                         ipaddress.notify(self.hass)
                 ipaddress.new_ip = False
 

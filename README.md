@@ -27,15 +27,21 @@ Add the config to configuration.yaml following the instructions below
 
 # Changelog
 
+## v0.0.3
+
+* Added notify_exclude_hostnames and notify_exclude_asns options 
+
+## v0.0.2
+
+* Updated for Python 3.13
+* Included ASN and Organisational name output
+
 ## v0.0.1
 
 * Initial fork of [custom-components/authenticated](https://github.com/custom-components/authenticated) by @ludeeus.
 * Updated development environment for 2024.5.5 including Python 3.12
 
-## v0.02
 
-* Updated for Python 3.13
-* Included ASN and Organisational name output
 
 # Old Readme (may or may not be accurate)
 
@@ -56,6 +62,8 @@ sensor:
 | **provider**            | no       | 'ipapi' | The provider you want to use for GEO Lookup, 'ipapi', 'extreme', 'ipvigilante'.          |
 | **log_location**        | no       |         | Full path to the logfile.                                                                |
 | **notify_exclude_asns** | no       | []      | A list of ASNs that will be excluded from notifications. Note they will still be logged as normal, and this setting has no effect if `enable_notification` is set to `false`.
+| **notify_exclude_hostnames** | no       | []      | A list of hostnames that will be excluded from notifications. Note they will still be logged as normal, and this setting has no effect if `enable_notification` is set to `false`.
+
 
 **Sample overview:**\
 ![Sample overview](/img/overview.png)
