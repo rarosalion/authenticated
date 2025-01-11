@@ -477,7 +477,6 @@ class IPData:
                 message += f"**{notify_str}:**  {notify_val}\n"
 
         if self.last_used_at is not None:
-            message += f"**Login time:**   {
-                self.last_used_at[:19].replace('T', ' ')}"
+            message += f"**Login time:**   {self.last_used_at[:19].replace('T', ' ')}"
 
         notify(message, title="New successful login", notification_id=self.ip_address)
