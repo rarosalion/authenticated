@@ -16,6 +16,7 @@ from ipaddress import ip_network
 import homeassistant.helpers.config_validation as cv
 import voluptuous as vol
 import yaml
+from homeassistant.components import persistent_notification
 from homeassistant.components.sensor import PLATFORM_SCHEMA
 from homeassistant.helpers.entity import Entity
 
@@ -459,7 +460,7 @@ class IPData:
 
     def notify(self, hass):
         """Create persistant notification."""
-        notify = hass.components.persistent_notification.create
+        notify = persistent_notification.create
         message = f"""
         **IP Address:**   {self.ip_address}
         **Username:**    {self.username}
