@@ -479,4 +479,6 @@ class IPData:
         if self.last_used_at is not None:
             message += f"**Login time:**   {self.last_used_at[:19].replace('T', ' ')}"
 
-        async_create(hass, message, title="New successful login", notification_id=self.ip_address)
+        async_create(
+            hass, message, title="New successful login", notification_id=self.ip_address
+        )
