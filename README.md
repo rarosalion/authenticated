@@ -27,6 +27,15 @@ Add the config to configuration.yaml following the instructions below
 
 # Changelog
 
+## v0.0.5
+
+* Merged documentation updates from BlythMeister
+* Using async_create instead of deprecated persistent_notification (thanks miguelrjim)
+
+## v0.0.4
+
+* Added notify_exclude_hostnames and notify_exclude_asns options
+
 ## v0.0.3
 
 * Added notify_exclude_hostnames and notify_exclude_asns options 
