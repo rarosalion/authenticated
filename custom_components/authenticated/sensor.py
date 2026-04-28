@@ -16,6 +16,7 @@ from ipaddress import ip_network
 import homeassistant.helpers.config_validation as cv
 import voluptuous as vol
 import yaml
+from homeassistant.components.persistent_notification import async_create
 from homeassistant.components.sensor import PLATFORM_SCHEMA
 from homeassistant.helpers.entity import Entity
 
@@ -459,7 +460,6 @@ class IPData:
 
     def notify(self, hass):
         """Create persistant notification."""
-        notify = hass.components.persistent_notification.create
         message = f"""
         **IP Address:**   {self.ip_address}
         **Username:**    {self.username}
@@ -479,4 +479,4 @@ class IPData:
         if self.last_used_at is not None:
             message += f"**Login time:**   {self.last_used_at[:19].replace('T', ' ')}"
 
-        notify(message, title="New successful login", notification_id=self.ip_address)
+        async_create(hass, message, title="New successful login", notification_id=self.ip_address)

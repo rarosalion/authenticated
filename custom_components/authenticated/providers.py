@@ -70,8 +70,7 @@ class GeoProvider:
         self.result = {}
         try:
             api = self.url.format(self.ipaddr)
-            header = {"user-agent": "Home Assistant/Python"}
-            data = requests.get(api, headers=header, timeout=5).json()
+            data = requests.get(api, timeout=5).json()
 
             _LOGGER.debug(data)
 
