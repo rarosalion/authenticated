@@ -14,7 +14,7 @@ For general info about securing your instance:
 - https://www.home-assistant.io/docs/configuration/securing/
 
 # Installation (HACS - preferred)
-Add this repo as a custom repository in HACS: [https://github.com/twhittock/eo_mini](https://github.com/rarosalion/authenticated) (for instructions on how to add a custom repository you can visit https://hacs.xyz/docs/faq/custom_repositories/)
+Add this repo as a custom repository in HACS: [https://github.com/rarosalion/authenticated](https://github.com/rarosalion/authenticated) (for instructions on how to add a custom repository you can visit https://hacs.xyz/docs/faq/custom_repositories/)
 Add the config to configuration.yaml following the instructions below
 # Installation (manual)
 Using the tool of choice open the directory (folder) for your HA configuration (where you find configuration.yaml).
