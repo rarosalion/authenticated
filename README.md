@@ -1,12 +1,14 @@
+# Notes on Support (or lack thereof)
+
+This integration was a very minor update from the [depreciated custom component](https://github.com/custom-components/authenticated) by @ludeeus.
+
+Please consider this plugin "best effort". It was never my code, but I took it and got it working for me, and learned a few things in the process. It still works for me, and has seemingly worked for others. It's also been broken by Homeassistant updates, and left dead for long periods of time. If it breaks again, and you feel like submitting a PR to update it, I'll probably accept it and make a new release (when I see the PR). Otherwise, I might come back and fix it when it bothers me enough to spend some time on it.
+
+If that bothers you, I completely understand. You're welcome to fork this code again (I might even use your version, if you're more reliable than me at updating it!), or find something else that meets your needs. If this doesn't bother you, please read on...
+
 # authenticated
 
 A platform which allows you to get information successful logins to Home Assistant.
-
-Note that this integration is a very minor update from the [depreciated custom component](https://github.com/custom-components/authenticated) by @ludeeus. At this stage, it's simply an update of the development environment only.
-
-It works for me, but hasn't gone through thorough testing or updates.
-
-If that doesn't worry you, then you should know what to get from this repo, or use [HACS](https://hacs.xyz/).
 
 For general info about securing your instance:
 - https://www.home-assistant.io/docs/authentication/
@@ -16,6 +18,7 @@ For general info about securing your instance:
 # Installation (HACS - preferred)
 Add this repo as a custom repository in HACS: [https://github.com/rarosalion/authenticated](https://github.com/rarosalion/authenticated) (for instructions on how to add a custom repository you can visit https://hacs.xyz/docs/faq/custom_repositories/)
 Add the config to configuration.yaml following the instructions below
+
 # Installation (manual)
 Using the tool of choice open the directory (folder) for your HA configuration (where you find configuration.yaml).
 If you do not have a custom_components directory (folder) there, you need to create it.
@@ -68,7 +71,7 @@ sensor:
 | **platform**            | yes      |         | The sensor platform name.                                                                |
 | **enable_notification** | no       | `true`  | Turn on/off `persistant_notifications` when a new IP is detected, can be `true`/`false`. |
 | **exclude**             | no       |         | A list of IP addresses you want to exclude.                                              |
-| **provider**            | no       | 'ipapi' | The provider you want to use for GEO Lookup, 'ipapi', 'extreme', 'ipvigilante'.          |
+| **provider**            | no       | 'ipinfo' | The provider you want to use for GEO Lookup, 'ipapi', 'ipinfo'.          |
 | **log_location**        | no       |         | Full path to the logfile.                                                                |
 | **notify_exclude_asns** | no       | []      | A list of ASNs that will be excluded from notifications. Note they will still be logged as normal, and this setting has no effect if `enable_notification` is set to `false`.
 | **notify_exclude_hostnames** | no       | []      | A list of hostnames that will be excluded from notifications. Note they will still be logged as normal, and this setting has no effect if `enable_notification` is set to `false`.

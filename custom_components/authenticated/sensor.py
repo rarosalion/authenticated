@@ -51,7 +51,7 @@ SCAN_INTERVAL = timedelta(minutes=1)
 PLATFORM_NAME = "authenticated"
 PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend(
     {
-        vol.Optional(CONF_PROVIDER, default="ipapi"): vol.In(list(PROVIDERS.keys())),
+        vol.Optional(CONF_PROVIDER, default="ipinfo"): vol.In(list(PROVIDERS.keys())),
         vol.Optional(CONF_LOG_LOCATION, default=""): cv.string,
         vol.Optional(CONF_NOTIFY, default=True): cv.boolean,
         vol.Optional(CONF_NOTIFY_ECLUDE_ASN, default=[]): vol.All(
